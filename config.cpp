@@ -31,7 +31,7 @@ class CfgVehicles {
         transportSoldier = 0;
         transportVehiclesCount = 0;
         transportVehiclesMass = 0;
-        armor = 100;
+        armor = 10;
     }
 }
 
@@ -77,11 +77,11 @@ class cfgMagazines
 
     // Tent
     class bde_tentDomePacked:HandGrenade_Stone {
-        mass=10;
+        mass=5;
         scope = 2;
         author="jopnas";
         displayName = "Tent Dome Packed";
-        picture = "\bde_items\pics\bottleempty.paa";
+        picture = "\bde_items\pics\tentdomepacked.paa";
         model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_folded_F";
         count=0;
     };
