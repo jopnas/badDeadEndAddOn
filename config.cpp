@@ -1,5 +1,4 @@
-#include patches.hpp;
-#include vehicles.hpp;
-#include weapons.hpp;
-#include magazines.hpp;
-#include ammo.hpp;
+#include "incs/patches.hpp";
+#include "incs/vehicles.hpp";
+#include "incs/weapons.hpp";
+#include "incs/magazines.hpp";
