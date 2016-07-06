@@ -1,13 +1,12 @@
 class CfgPatches
 {
-    class bde
-    {
-        units[]={}
-        weapons[]={}
-        magazines[]={}
-        ammo[]={}
-        vehicles[]={}
+    class bde {
+        units[]={};
+        weapons[]={};
+        magazines[]={};
+        ammo[]={};
+        vehicles[]={};
         requiredVersion=0.1;
-        requiredAddons[]={}
-    }
-}
+        requiredAddons[]={};
+    };
+};

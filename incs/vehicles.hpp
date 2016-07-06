@@ -11,7 +11,7 @@ class CfgVehicles {
         maximumLoad = 10000;
         linkedItems[] = {"bde_meat_small","bde_meat_small"};
         transportMaxMagazines = 2;
-    }
+    };
 
     class bde_tentDome:ContainerSupply {
         scope = 2;
@@ -27,7 +27,7 @@ class CfgVehicles {
         camouflage = 2;
         destrType = "DestructTent";
         armor = 10;
-    }
+    };
 
     class bde_tentCamo:ContainerSupply {
         scope = 2;
@@ -43,5 +43,5 @@ class CfgVehicles {
         camouflage = 1;
         destrType = "DestructTent";
         armor = 10;
-    }
-}
+    };
+};
