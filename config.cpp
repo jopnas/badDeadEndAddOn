@@ -1,7 +1,3 @@
-/*#include "incs\patches.hpp";
-#include "incs\vehicles.hpp";
-#include "incs\weapons.hpp";
-#include "incs\magazines.hpp";*/
 class CfgPatches
 {
     class bde {
@@ -15,22 +11,45 @@ class CfgPatches
     };
 };
 
-class CfgVehicles {
-    class ContainerSupply;
-    class Rabbit_F;
+class CfgMovesAnimal_Base_F;
+class CfgMovesDog_F: CfgMovesAnimal_Base_F
+ {
+    class States
+    {
+        class Dog_Stop;
+        class Dog_Attack: Dog_Stop
+        {
+            file = "\A3\animals_f_beta\Dog\data\anim\dogAttack.rtm";
+            speed = 1;
+			looped = true;
+            ConnectTo[] = {"Dog_Stop", 0.1};
+			InterpolateTo[] = {"Dog_Die", 0.02};
+        };
+    };
+};
 
-    class bde_deadRabit:Rabbit_F {
+class CfgVehicles
+{
+    class ContainerSupply;
+    class bde_dogbag:ContainerSupply
+    {
         scope = 2;
         author="jopnas";
-        displayName = "Dead Rabbit";
+        displayName = "Dogbag";
+        model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Gorod";
         icon = "";
-        mapsize = 1;
-        maximumLoad = 10000;
-        linkedItems[] = {"bde_meat_small","bde_meat_small"};
-        transportMaxMagazines = 2;
+        mapsize = 2;
+        maximumLoad = 1000;
+        transportMaxMagazines = 10;
+        transportMaxWeapons = 2;
+        transportMaxBackpacks = 0;
+        camouflage = 2;
+        destrType = "DestructTent";
+        armor = 100000;
     };
 
-    class bde_tentDome:ContainerSupply {
+    class bde_tentDome:ContainerSupply
+    {
         scope = 2;
         author="jopnas";
         displayName = "Tent Dome";
@@ -46,7 +65,8 @@ class CfgVehicles {
         armor = 10;
     };
 
-    class bde_tentCamo:ContainerSupply {
+    class bde_tentCamo:ContainerSupply
+    {
         scope = 2;
         author="jopnas";
         displayName = "Tent Dome";
@@ -63,11 +83,12 @@ class CfgVehicles {
     };
 };
 
-class cfgWeapons {
+class cfgWeapons
+{
 	// Item Model Replacement
 	class ItemMap
 	{
-		model = "\A3\Structures_F_EPB\Items\Documents\Map_altis_F";
+		model = "\A3\Structures_F\Items\Documents\Map_unfolded_F";
 	};
 	class ItemCompass
 	{
@@ -80,8 +101,43 @@ class cfgMagazines
 	class Default;
 	class CA_Magazine;
 
-    // Tent
-    class bde_tentDomePacked:CA_Magazine {
+    // Camo Nets
+    class bde_camonetSmallPacked:CA_Magazine
+    {
+        mass=15;
+        scope = 2;
+        author="jopnas";
+        displayName = "Camonet Small Packed";
+        picture = "\bde\pics\tentdomepacked.paa";
+        model = "\A3\Structures_F\Civ\Camping\Ground_sheet_folded_yellow_F";
+        count=1;
+    };
+
+    class bde_camonetBigPacked:CA_Magazine
+    {
+        mass=15;
+        scope = 2;
+        author="jopnas";
+        displayName = "Camonet Big Packed";
+        picture = "\bde\pics\tentdomepacked.paa";
+        model = "\A3\Structures_F\Civ\Camping\Ground_sheet_folded_khaki_F";
+        count=1;
+    };
+
+    class bde_camonetVehiclesPacked:CA_Magazine
+    {
+        mass=15;
+        scope = 2;
+        author="jopnas";
+        displayName = "Camonet Vehicles Packed";
+        picture = "\bde\pics\tentdomepacked.paa";
+        model = "\A3\Structures_F\Civ\Camping\Ground_sheet_folded_OPFOR_F";
+        count=1;
+    };
+
+    // Tents
+    class bde_tentDomePacked:CA_Magazine
+    {
         mass=15;
         scope = 2;
         author="jopnas";
@@ -91,7 +147,8 @@ class cfgMagazines
         count=1;
     };
 
-    class bde_tentCamoPacked:CA_Magazine {
+    class bde_tentCamoPacked:CA_Magazine
+    {
         mass=10;
         scope = 2;
         author="jopnas";
@@ -279,6 +336,62 @@ class cfgMagazines
         count=1;
 	};
 
+	class bde_apple: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author="jopnas";
+		displayName="Apple";
+		picture = "\bde\pics\apple.paa";
+        model="\bde\models\apple";
+        count=1;
+	};
+
+    // Soda
+    class bde_sodacan_01: CA_Magazine
+    {
+        mass=1;
+        scope=2;
+        author="jopnas";
+        displayName="Pepsi";
+        picture = "\bde\pics\soda.paa";
+        model = "\bde\models\soda_can_01";
+        count=1;
+    };
+
+    class bde_sodacan_01_trash: CA_Magazine
+    {
+        mass=1;
+        scope=2;
+        author="jopnas";
+        displayName="Empty Pepsi";
+        picture = "\bde\pics\soda.paa";
+        model = "\bde\models\soda_can_01_trash";
+        count=1;
+    };
+
+    class bde_sodacan_02: CA_Magazine
+    {
+        mass=1;
+        scope=2;
+        author="jopnas";
+        displayName="Spirit";
+        picture = "\bde\pics\soda.paa";
+        model = "\A3\Structures_F\Items\Food\Can_Rusty_F";
+        count=1;
+    };
+
+    class bde_canempty: CA_Magazine
+    {
+        mass=1;
+        scope=2;
+        author="jopnas";
+        displayName="Empty sodacan";
+        picture = "\bde\pics\soda2.paa";
+        model = "\A3\Structures_F\Items\Food\Can_Dented_F";
+        count=1;
+    };
+
 	// Medicals
 	class bde_waterpurificationtablets: CA_Magazine
 	{
@@ -348,14 +461,14 @@ class cfgMagazines
 	};
 
     // Vehicle Parts
-	class bde_tire: CA_Magazine
+	class bde_wheel: CA_Magazine
 	{
 		mass=10;
 		scope=2;
 		author="jopnas";
-		displayName="Tire";
-		picture = "\bde\pics\tire.paa";
-		model = "\A3\Structures_F\Civ\Garbage\Tyre_F";
+		displayName="Wheel";
+		picture = "\bde\pics\wheel.paa";
+		model = "\bde\models\wheel";
         count=1;
 	};
 
@@ -410,7 +523,7 @@ class cfgMagazines
 		scope=2;
 		author="jopnas";
 		displayName="Fuel Canister (Empty)";
-		picture = "\bde\pics\hatchet.paa";
+		picture = "\bde\pics\fuelcan_empty.paa";
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F";
         count=1;
 	};
@@ -421,34 +534,50 @@ class cfgMagazines
 		scope=2;
 		author="jopnas";
 		displayName="Fuel Canister";
-		picture = "\bde\pics\hatchet.paa";
+		picture = "\bde\pics\fuelcan_filled.paa";
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F";
         count=1;
 	};
+};
 
-	// Trash&Rubbish
-	// Soda
-	class bde_canrusty: CA_Magazine
-	{
-		mass=1;
-		scope=2;
-		author="jopnas";
-		displayName="Sodacan Spirit";
-		picture = "\bde\pics\soda.paa";
-		model = "\A3\Structures_F\Items\Food\Can_Rusty_F";
-        count=1;
-	};
+// GUI
+class RscListbox;
+class ScrollBar;
+class InventoryActionMenu: RscListbox
+{
+    idc = 666666;
+    access = 0; // Control access (0 - ReadAndWrite, 1 - ReadAndCreate, 2 - ReadOnly, 3 - ReadOnlyVerified)
+    type = 5; // Type is 5
+    x = 0; // Horizontal coordinates
+    y = 0; // Vertical coordinates
+    w = 0.2; // Width
+    h = 0.1; // Height
+    sizeEx = 0.027; // Text size
+    rowHeight = 0.027; // Row height
+    itemSpacing = 0.01;
+    period = 0; // Oscillation time between colorSelect/colorSelectBackground2 and colorSelect2/colorSelectBackground when selected
+    blinkingPeriod = 0; // Time in which control will fade out and back in. Use 0 to disable the effect.
 
-    // Food
-	class bde_canempty: CA_Magazine
-	{
-		mass=1;
-		scope=2;
-		author="jopnas";
-		displayName="Empty sodacan";
-		picture = "\bde\pics\soda2.paa";
-		model = "\A3\Structures_F\Items\Food\Can_Dented_F";
-        count=1;
-	};
+    colorBackground[] = {0,0,0,1}; // Fill color
+    colorSelectBackground[] = {0,0,0,1}; // Selected item fill color
+    colorSelectBackground2[] = {0,0,0,1}; // Selected item fill color (oscillates between this and colorSelectBackground)
+    font = "TahomaB"; // Font from CfgFontFamilies
+    shadow = 0; // Shadow (0 - none, 1 - directional, color affected by colorShadow, 2 - black outline)
+    colorText[] = {0.8,0.8,0.8,1}; // Text and frame color
+    colorDisabled[] = {0.8,0.8,0.8,1}; // Disabled text color
+    colorSelect[] = {0.8,0.8,0.8,1}; // Text selection color
+    colorSelect2[] = {0.8,0.8,0.8,1}; // Text selection color (oscillates between this and colorSelect)
+    colorShadow[] = {0,0,0,1}; // Text shadow color (used only when shadow is 1)
 
+    pictureColor[] = {1,0.5,0,1}; // Picture color
+    pictureColorSelect[] = {1,1,1,1}; // Selected picture color
+    pictureColorDisabled[] = {1,1,1,1}; // Disabled picture color
+
+    tooltip = ""; // Tooltip text
+    tooltipColorShade[] = {0,0,0,1}; // Tooltip background color
+    tooltipColorText[] = {1,1,1,1}; // Tooltip text color
+    tooltipColorBox[] = {1,1,1,1}; // Tooltip frame color
+
+    maxHistoryDelay = 1; // Time since last keyboard type search to reset it
+    canDrag = 0; // 1 (true) to allow item dragging
 };
