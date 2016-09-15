@@ -307,6 +307,17 @@ class cfgMagazines
         count=1;
 	};
 
+	class bde_antiradiationtablets: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author="jopnas";
+		displayName="Anti Radiation Tablets";
+		picture = "\bde\pics\waterPure.paa";
+		model="\A3\structures_f_epa\Items\medical\WaterPurificationTablets_F";
+        count=1;
+	};
+
 	class bde_vitamines: CA_Magazine
 	{
 		mass=1;
