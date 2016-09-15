@@ -1,6 +1,7 @@
 class cfgGlasses
 {
-    class G_Combat
+    class None;
+    class bde_gasmask:None
     {
         author = "jopnas";
         displayname = "Gasmask";
