@@ -8,7 +8,7 @@ class cfgMagazines
     {
         mass=15;
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Camonet Small Packed";
         picture = "\bde\pics\tentdomepacked.paa";
         model = "\A3\Structures_F\Civ\Camping\Ground_sheet_folded_yellow_F";
@@ -19,7 +19,7 @@ class cfgMagazines
     {
         mass=15;
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Camonet Big Packed";
         picture = "\bde\pics\tentdomepacked.paa";
         model = "\A3\Structures_F\Civ\Camping\Ground_sheet_folded_khaki_F";
@@ -30,7 +30,7 @@ class cfgMagazines
     {
         mass=15;
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Camonet Vehicles Packed";
         picture = "\bde\pics\tentdomepacked.paa";
         model = "\A3\Structures_F\Civ\Camping\Ground_sheet_folded_OPFOR_F";
@@ -42,7 +42,7 @@ class cfgMagazines
     {
         mass=15;
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Tent Dome Packed";
         picture = "\bde\pics\tentdomepacked.paa";
         model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_folded_F";
@@ -53,7 +53,7 @@ class cfgMagazines
     {
         mass=10;
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Camo Tent Packed";
         picture = "\bde\pics\tentdomepacked.paa";
         model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_brown_folded_F";
@@ -66,7 +66,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Plastic Bottle (Useless)";
 		picture = "\bde\pics\bottleempty.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
@@ -77,7 +77,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Plastic Bottle (Empty)";
 		picture = "\bde\pics\bottleempty.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
@@ -87,7 +87,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Plastic Bottle (Dirty Water)";
 		picture = "\bde\pics\bottledirty.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
@@ -98,7 +98,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Plastic Bottle (Clean Water)";
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
@@ -110,7 +110,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Canteen (Empty)";
 		picture = "\bde\pics\canteen_empty.paa";
 		model="\A3\structures_f_epa\Items\Food\Canteen_F";
@@ -121,7 +121,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Canteen (Clean Water)";
 		picture = "\bde\pics\canteen_empty.paa";
 		model="\A3\structures_f_epa\Items\Food\Canteen_F";
@@ -133,7 +133,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Unknown Can";
 		picture = "\bde\pics\canunknown.paa";
 		model = "\bde\models\canunknown";
@@ -144,7 +144,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Empty Can";
 		picture = "\bde\pics\emptycanunknown.paa";
 		model = "\bde\models\emptycanunknown";
@@ -155,7 +155,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Can (Pasta)";
 		picture = "\bde\pics\canpasta.paa";
 		model = "\bde\models\can_pasta";
@@ -166,7 +166,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Empty Can (Pasta)";
 		picture = "\bde\pics\emptycanpasta.paa";
 		model = "\bde\models\empty_can_pasta";
@@ -177,7 +177,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Baked Beans";
 		picture = "\bde\pics\bakedbeans.paa";
 		model = "\A3\Structures_F_EPA\Items\Food\BakedBeans_F";
@@ -187,7 +187,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Tactical Bacon";
 		picture = "\bde\pics\TacticalBacon.paa";
 		model="\A3\structures_f\Items\Food\TacticalBacon_F";
@@ -199,7 +199,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Meat (Big)";
 		picture = "\bde\pics\meat_big.paa";
 		model="\bde\models\meat_big";
@@ -209,7 +209,7 @@ class cfgMagazines
 	{
 		mass=2;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Cooked Meat (Big)";
 		picture = "\bde\pics\meat_big_cooked.paa";
 		model="\bde\models\meat_big_cooked";
@@ -220,7 +220,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Meat (Small)";
 		picture = "\bde\pics\meat_small.paa";
 		model="\bde\models\meat_small";
@@ -231,7 +231,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Cooked Meat (Small)";
 		picture = "\bde\pics\meat_small_cooked.paa";
 		model="\bde\models\meat_small_cooked";
@@ -243,7 +243,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Apple";
 		picture = "\bde\pics\apple.paa";
         model="\bde\models\apple";
@@ -255,7 +255,7 @@ class cfgMagazines
     {
         mass=1;
         scope=2;
-        author="jopnas";
+        author = "NotSure";
         displayName="Pepsi";
         picture = "\bde\pics\soda.paa";
         model = "\bde\models\soda_can_01";
@@ -266,7 +266,7 @@ class cfgMagazines
     {
         mass=1;
         scope=2;
-        author="jopnas";
+        author = "NotSure";
         displayName="Empty Pepsi";
         picture = "\bde\pics\soda.paa";
         model = "\bde\models\soda_can_01_trash";
@@ -277,7 +277,7 @@ class cfgMagazines
     {
         mass=1;
         scope=2;
-        author="jopnas";
+        author = "NotSure";
         displayName="Spirit";
         picture = "\bde\pics\soda.paa";
         model = "\A3\Structures_F\Items\Food\Can_Rusty_F";
@@ -288,7 +288,7 @@ class cfgMagazines
     {
         mass=1;
         scope=2;
-        author="jopnas";
+        author = "NotSure";
         displayName="Empty sodacan";
         picture = "\bde\pics\soda2.paa";
         model = "\A3\Structures_F\Items\Food\Can_Dented_F";
@@ -300,7 +300,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Water Purification Tablets";
 		picture = "\bde\pics\waterPure.paa";
 		model="\A3\structures_f_epa\Items\medical\WaterPurificationTablets_F";
@@ -311,7 +311,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Anti Radiation Tablets";
 		picture = "\bde\pics\waterPure.paa";
 		model="\A3\structures_f_epa\Items\medical\WaterPurificationTablets_F";
@@ -322,7 +322,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Vitamin Bottle";
 		picture = "\bde\pics\vitamines.paa";
 		model = "\A3\Structures_F_EPA\Items\Medical\VitaminBottle_F";
@@ -333,7 +333,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Antibiotics";
 		picture = "\bde\pics\Antibiotic.paa";
 		model="\A3\structures_f_epa\Items\medical\antibiotic_F";
@@ -345,7 +345,7 @@ class cfgMagazines
 	{
 		mass=5;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Stone";
 		picture = "\bde\pics\stone.paa";
 		model = "\A3\Weapons_f\ammo\stone_2";
@@ -356,7 +356,7 @@ class cfgMagazines
 	{
 		mass=5;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Wood";
 		picture = "\bde\pics\wood.paa";
 		model = "\bde\models\woodlog";
@@ -367,7 +367,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Ducttape";
 		picture = "\bde\pics\ducttape.paa";
 		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
@@ -379,7 +379,7 @@ class cfgMagazines
 	{
 		mass=20;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Wheel";
 		picture = "\bde\pics\wheel.paa";
 		model = "\bde\models\wheel";
@@ -391,7 +391,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Zippo Lighter";
 		picture = "\bde\pics\zippo.paa";
 		model = "\bde\models\zippo";
@@ -402,7 +402,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Matches";
 		picture = "\bde\pics\matches.paa";
 		model = "\A3\Structures_F_EPA\Items\Tools\Matches_F";
@@ -413,7 +413,7 @@ class cfgMagazines
 	{
 		mass=1;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Lock";
 		picture = "\bde\pics\lock.paa";
 		model = "\bde\models\lock";
@@ -424,7 +424,7 @@ class cfgMagazines
 	{
 		mass=3;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Hatchet";
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Axe_F";
@@ -435,7 +435,7 @@ class cfgMagazines
 	{
 		mass=10;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Fuel Canister (Empty)";
 		picture = "\bde\pics\fuelcan_empty.paa";
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F";
@@ -446,7 +446,7 @@ class cfgMagazines
 	{
 		mass=10;
 		scope=2;
-		author="jopnas";
+		author = "NotSure";
 		displayName="Fuel Canister";
 		picture = "\bde\pics\fuelcan_filled.paa";
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F";

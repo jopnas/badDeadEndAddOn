@@ -16,7 +16,7 @@ class cfgWeapons
     // Headgear
     class H_HelmetB: ItemCore
     {
-        author = "jopnas";
+        author = "NotSure";
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "ECH";

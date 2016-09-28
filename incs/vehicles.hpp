@@ -6,7 +6,7 @@ class CfgVehicles
     // Backpacks
     class bde_smallBackpack: Bag_Base
     {
-        author = "jopnas";
+        author = "NotSure";
         scope = 2;
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Compact";
         displayName = "Small Backpack";
@@ -20,7 +20,7 @@ class CfgVehicles
     class bde_dogbag:ContainerSupply
     {
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Dogbag";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Gorod";
         icon = "";
@@ -38,7 +38,7 @@ class CfgVehicles
     class bde_tentDome:ContainerSupply
     {
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Tent Dome";
         model = "\A3\Structures_F\Civ\Camping\TentDome_F";
         icon = "";
@@ -55,7 +55,7 @@ class CfgVehicles
     class bde_tentCamo:ContainerSupply
     {
         scope = 2;
-        author="jopnas";
+        author = "NotSure";
         displayName = "Tent Dome";
         model = "\A3\Structures_F\Civ\Camping\TentA_F";
         icon = "";
