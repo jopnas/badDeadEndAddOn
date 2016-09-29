@@ -354,7 +354,7 @@ class cfgMagazines
 	// Objects
 	class bde_stone: CA_Magazine
 	{
-		mass=5;
+		mass=10;
 		scope=2;
 		author = "NotSure";
 		displayName="Stone";
@@ -365,7 +365,7 @@ class cfgMagazines
 
 	class bde_wood: CA_Magazine
 	{
-		mass=5;
+		mass=10;
 		scope=2;
 		author = "NotSure";
 		displayName="Wood";
@@ -466,8 +466,8 @@ class cfgMagazines
 
 	class bde_scarf: CA_Magazine
 	{
-		mass=10;
-		scope=2;
+		mass = 1;
+		scope = 2;
 		author = "NotSure";
 		displayName="Scarf";
 		picture = "\bde\pics\fuelcan_filled.paa";
