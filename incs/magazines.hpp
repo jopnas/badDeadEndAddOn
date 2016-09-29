@@ -340,6 +340,17 @@ class cfgMagazines
         count=1;
 	};
 
+    class bde_gasmask_filter: CA_Magazine
+	{
+		mass=3;
+		scope=2;
+		author = "NotSure";
+		displayName="Gasmask Filter";
+		picture = "\bde\pics\Antibiotic.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\GasCanister_F.p3d";
+        count=1;
+	};
+
 	// Objects
 	class bde_stone: CA_Magazine
 	{
@@ -450,6 +461,17 @@ class cfgMagazines
 		displayName="Fuel Canister";
 		picture = "\bde\pics\fuelcan_filled.paa";
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F";
+        count=1;
+	};
+
+	class bde_scarf: CA_Magazine
+	{
+		mass=10;
+		scope=2;
+		author = "NotSure";
+		displayName="Scarf";
+		picture = "\bde\pics\fuelcan_filled.paa";
+		model = "\A3\Structures_F\Items\Tools\Gloves_F.p3d";
         count=1;
 	};
 };
