@@ -347,7 +347,7 @@ class cfgMagazines
 		author = "NotSure";
 		displayName="Gasmask Filter";
 		picture = "\bde\pics\Antibiotic.paa";
-		model = "\A3\Structures_F_EPA\Items\Tools\GasCanister_F.p3d";
+		model = "\bde\models\bde_gasmask_filter";
         count=1;
 	};
 
