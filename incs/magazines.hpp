@@ -464,6 +464,29 @@ class cfgMagazines
         count=1;
 	};
 
+    class bde_plank: CA_Magazine
+    {
+        mass=3;
+        scope=2;
+        author = "NotSure";
+        displayName="Single Plank";
+        picture = "\bde\pics\lock.paa";
+        model = "\bde\models\barricade_window_one";
+        count=1;
+    };
+
+    class bde_nails: CA_Magazine
+    {
+        mass=1;
+        scope=2;
+        author = "NotSure";
+        displayName="Nails";
+        picture = "\bde\pics\lock.paa";
+        model = "\A3\Structures_F\Items\Stationery\PensAndPencils_F";
+        count=1;
+    };
+
+    // Cloth
 	class bde_scarf: CA_Magazine
 	{
 		mass = 1;
