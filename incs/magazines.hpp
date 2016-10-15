@@ -464,25 +464,36 @@ class cfgMagazines
         count=1;
 	};
 
+    class bde_hammer: CA_Magazine
+	{
+		mass=4;
+		scope=2;
+		author = "NotSure";
+		displayName="Hammer";
+		picture = "\bde\pics\bde_Hammer.paa";
+		model = "\bde\models\bde_hammer";
+        count=1;
+	};
+
+    class bde_nails: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Nails";
+		picture = "\bde\pics\bde_nails.paa";
+		model = "\bde\models\bde_nails";
+        count=1;
+	};
+
     class bde_plank: CA_Magazine
     {
         mass=3;
         scope=2;
         author = "NotSure";
         displayName="Single Plank";
-        picture = "\bde\pics\lock.paa";
-        model = "\bde\models\barricade_window_one";
-        count=1;
-    };
-
-    class bde_nails: CA_Magazine
-    {
-        mass=1;
-        scope=2;
-        author = "NotSure";
-        displayName="Nails";
-        picture = "\bde\pics\lock.paa";
-        model = "\A3\Structures_F\Items\Stationery\PensAndPencils_F";
+        picture = "\bde\pics\bde_plank.paa";
+        model = "\bde\models\bde_plank";
         count=1;
     };
 
