@@ -1,8 +1,6 @@
-class RscPicture;
-class RscButton;
+// Item Actionss
 class RscListbox;
 class ScrollBar;
-
 class InventoryActionMenu: RscListbox
 {
     idc = 666666;
@@ -42,6 +40,27 @@ class InventoryActionMenu: RscListbox
     canDrag = 0; // 1 (true) to allow item dragging
 };
 
+// Codelock GUI
+class RscPicture;
+class RscButton;
+class codeLockNum : RscButton
+{
+    style = 2;
+    borderSize = 0;
+    colorBackground[] = {0.5,0.5,0.5,1};
+    colorBackgroundActive[] = {0.5,0.5,0.5,1};
+    colorBackgroundDisabled[] = {0.5,0.5,0.5,1};
+    colorBorder[] = {0,0,0,0};
+    colorDisabled[] = {1,1,1,1};
+    colorFocused[] = {1,1,1,1};
+    colorShadow[] = {0,0,0,0.5};
+    colorText[] = {1,1,1,1};
+    offsetPressedX = 0.01;
+    offsetPressedY = 0.01;
+    offsetX = 0
+    offsetY = 0;
+}
+
 class codelockGUI {
     idd = 666667;
     movingEnable = 0;
@@ -53,13 +72,15 @@ class codelockGUI {
         class bdeCoselockBackground: RscPicture
         {
             idc = 1213;
-            text = "#(argb,8,8,3)color(1,1,1,1)";
+            text = "#(argb,8,8,3)color(0,0,0,1)";
             x = 11.5 * GUI_GRID_W + GUI_GRID_X;
-            y = 2 * GUI_GRID_H + GUI_GRID_Y;
+            y = 2 * c + GUI_GRID_Y;
             w = 17.5 * GUI_GRID_W;
             h = 20.5 * GUI_GRID_H;
+            colorBackground[] = {0,0,0,1};
+            colorText[] = {1,1,1,1};
         };
-        class bdeCodelockButton1: RscButton
+        class bdeCodelockButton1: codeLockNum
         {
             idc = 1214;
             text = "1";
@@ -68,7 +89,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton2: RscButton
+        class bdeCodelockButton2: codeLockNum
         {
             idc = 1215;
             text = "2";
@@ -77,7 +98,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton3: RscButton
+        class bdeCodelockButton3: codeLockNum
         {
             idc = 1216;
             text = "3";
@@ -86,7 +107,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton4: RscButton
+        class bdeCodelockButton4: codeLockNum
         {
             idc = 1217;
             text = "4";
@@ -95,7 +116,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton5: RscButton
+        class bdeCodelockButton5: codeLockNum
         {
             idc = 1218;
             text = "5";
@@ -104,7 +125,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton6: RscButton
+        class bdeCodelockButton6: codeLockNum
         {
             idc = 1219;
             text = "6";
@@ -113,7 +134,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton7: RscButton
+        class bdeCodelockButton7: codeLockNum
         {
             idc = 1220;
             text = "7";
@@ -122,7 +143,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton8: RscButton
+        class bdeCodelockButton8: codeLockNum
         {
             idc = 1221;
             text = "8";
@@ -131,7 +152,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton9: RscButton
+        class bdeCodelockButton9: codeLockNum
         {
             idc = 1222;
             text = "9";
@@ -140,7 +161,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButton0: RscButton
+        class bdeCodelockButton0: codeLockNum
         {
             idc = 1223;
             text = "0";
@@ -149,7 +170,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButtonC: RscButton
+        class bdeCodelockButtonC: codeLockNum
         {
             idc = 1224;
             text = "C";
@@ -158,7 +179,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButtonHash: RscButton
+        class bdeCodelockButtonHash: codeLockNum
         {
             idc = 1225;
             text = "#";
@@ -167,7 +188,7 @@ class codelockGUI {
             w = 3 * GUI_GRID_W;
             h = 3 * GUI_GRID_H;
         };
-        class bdeCodelockButtonOk: RscButton
+        class bdeCodelockButtonOk: codeLockNum
         {
             idc = 1226;
             text = "OK";
