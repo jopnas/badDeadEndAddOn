@@ -173,27 +173,6 @@ class cfgMagazines
         count=1;
 	};
 
-	class bde_bakedbeans: CA_Magazine
-	{
-		mass=1;
-		scope=2;
-		author = "NotSure";
-		displayName="Baked Beans";
-		picture = "\bde\pics\bakedbeans.paa";
-		model = "\A3\Structures_F_EPA\Items\Food\BakedBeans_F";
-        count=1;
-	};
-	class bde_tacticalbacon: CA_Magazine
-	{
-		mass=1;
-		scope=2;
-		author = "NotSure";
-		displayName="Tactical Bacon";
-		picture = "\bde\pics\TacticalBacon.paa";
-		model="\A3\structures_f\Items\Food\TacticalBacon_F";
-        count=1;
-	};
-
 	// Meat
 	class bde_meat_big: CA_Magazine
 	{
