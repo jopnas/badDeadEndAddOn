@@ -273,28 +273,6 @@ class cfgMagazines
         count=1;
     };
 
-    class bde_sodacan_02: CA_Magazine
-    {
-        mass=1;
-        scope=2;
-        author = "NotSure";
-        displayName="Spirit";
-        picture = "\bde\pics\soda.paa";
-        model = "\A3\Structures_F\Items\Food\Can_Rusty_F";
-        count=1;
-    };
-
-    class bde_canempty: CA_Magazine
-    {
-        mass=1;
-        scope=2;
-        author = "NotSure";
-        displayName="Empty sodacan";
-        picture = "\bde\pics\soda2.paa";
-        model = "\A3\Structures_F\Items\Food\Can_Dented_F";
-        count=1;
-    };
-
 	// Medicals
 	class bde_waterpurificationtablets: CA_Magazine
 	{
@@ -420,17 +398,6 @@ class cfgMagazines
         count=1;
 	};
 
-	class bde_lock: CA_Magazine
-	{
-		mass=1;
-		scope=2;
-		author = "NotSure";
-		displayName="Lock";
-		picture = "\bde\pics\lock.paa";
-		model = "\bde\models\lock";
-        count=1;
-	};
-
 	class bde_hatchet: CA_Magazine
 	{
 		mass=3;
@@ -461,6 +428,17 @@ class cfgMagazines
 		displayName="Fuel Canister";
 		picture = "\bde\pics\fuelcan_filled.paa";
 		model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F";
+        count=1;
+	};
+
+    class bde_lock: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Lock";
+		picture = "\bde\pics\lock.paa";
+		model = "\bde\models\lock";
         count=1;
 	};
 
@@ -496,6 +474,39 @@ class cfgMagazines
         model = "\bde\models\bde_plank";
         count=1;
     };
+
+    class bde_codelock_case: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Codelock Case";
+		picture = "\bde\pics\lock.paa";
+		model = "\bde\models\lock";
+        count=1;
+	};
+
+    class bde_codelock_pannel: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Codelock Pannel";
+		picture = "\bde\pics\lock.paa";
+		model = "\bde\models\lock";
+        count=1;
+	};
+
+    class bde_codelock: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Codelock";
+		picture = "\bde\pics\lock.paa";
+		model = "\bde\models\lock";
+        count=1;
+	};
 
     // Cloth
 	class bde_scarf: CA_Magazine
