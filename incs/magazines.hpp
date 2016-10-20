@@ -454,23 +454,23 @@ class cfgMagazines
         count=1;
     };
 
-    class bde_codelock_case: CA_Magazine
+    class bde_cable: CA_Magazine
 	{
 		mass=1;
 		scope=2;
 		author = "NotSure";
-		displayName="Codelock Case";
+		displayName="Cable";
 		picture = "\bde\pics\lock.paa";
-		model = "\bde\models\lock";
+		model = "\A3\Structures_F_EPA\Items\Tools\MetalWire_Fs";
         count=1;
 	};
 
-    class bde_codelock_pannel: CA_Magazine
+    class bde_codelock_panel: CA_Magazine
 	{
-		mass=1;
+		mass=2;
 		scope=2;
 		author = "NotSure";
-		displayName="Codelock Pannel";
+		displayName="Codelock Panel";
 		picture = "\bde\pics\lock.paa";
 		model = "\bde\models\lock";
         count=1;
@@ -478,7 +478,7 @@ class cfgMagazines
 
     class bde_codelock: CA_Magazine
 	{
-		mass=1;
+		mass=2;
 		scope=2;
 		author = "NotSure";
 		displayName="Codelock";
