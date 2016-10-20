@@ -35,6 +35,41 @@ class CfgVehicles
         armor = 100000;
     };
 
+    // Storages
+    class bde_storage:ContainerSupply
+    {
+        scope = 2;
+        author = "NotSure";
+        displayName = "Storage";
+        model = "\A3\Structures_F\Civ\Camping\TentDome_F";
+        icon = "";
+        mapsize = 2;
+        maximumLoad = 10000;
+        transportMaxMagazines = 20;
+        transportMaxWeapons = 10;
+        transportMaxBackpacks = 5;
+        camouflage = 2;
+        destrType = "DestructTent";
+        armor = 100;
+    };
+
+    class bde_storage_underground:ContainerSupply
+    {
+        scope = 2;
+        author = "NotSure";
+        displayName = "Storage Underground";
+        model = "\A3\Structures_F\Civ\Camping\TentDome_F";
+        icon = "";
+        mapsize = 2;
+        maximumLoad = 10000;
+        transportMaxMagazines = 20;
+        transportMaxWeapons = 10;
+        transportMaxBackpacks = 5;
+        camouflage = 2;
+        destrType = "DestructTent";
+        armor = 100;
+    };
+
     // Tents
     class bde_tentDome:ContainerSupply
     {
