@@ -51,6 +51,31 @@ class CfgVehicles
         camouflage = 2;
         destrType = "DestructTent";
         armor = 100;
+
+        class EventHandlers:EventHandlers{
+            init="_storage = _this select 0; _storage addAction ['Attache Lock',{_storage = _this select 0;systemChat 'make storage lockable';}, [], 6, false, false, '', '', 2, false];";
+        };
+    };
+
+    class bde_storage_lock:ContainerSupply
+    {
+        scope = 2;
+        author = "NotSure";
+        displayName = "Storage with Lock";
+        model = "\A3\Structures_F\Civ\Camping\TentDome_F";
+        icon = "";
+        mapsize = 2;
+        maximumLoad = 10000;
+        transportMaxMagazines = 20;
+        transportMaxWeapons = 10;
+        transportMaxBackpacks = 5;
+        camouflage = 2;
+        destrType = "DestructTent";
+        armor = 100;
+
+        class EventHandlers:EventHandlers{
+            init="_storage = _this select 0; _storage addAction ['Lock Storage',{_storage = _this select 0;_storage setVariable['bde_storage_locked',true,true];}, [], 6, false, false, '', '!(_target getVariable['bde_storage_locked',true]) && (_target getVariable['bde_storage_owner',0] == getPlayerUID _this)', 2, false];_storage addAction ['Unlock Storage',{_storage = _this select 0;_storage setVariable['bde_storage_locked',false,true];}, [], 6, false, false, '', '(_target getVariable['bde_storage_locked',true]) && (_target getVariable['bde_storage_owner',0] == getPlayerUID _this)', 2, false];";
+        };
     };
 
     class bde_storage_underground:ContainerSupply
@@ -58,7 +83,7 @@ class CfgVehicles
         scope = 2;
         author = "NotSure";
         displayName = "Storage Underground";
-        model = "\A3\Structures_F\Civ\Camping\TentDome_F";
+        model = "\A3\Structures_F\Walls\Rampart_F";
         icon = "";
         mapsize = 2;
         maximumLoad = 10000;
