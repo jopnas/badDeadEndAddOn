@@ -454,6 +454,17 @@ class cfgMagazines
         count=1;
     };
 
+    class bde_lock: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Lock";
+		picture = "\bde\pics\lock.paa";
+		model = "\bde\models\lock";
+        count=1;
+	};
+
     class bde_cable: CA_Magazine
 	{
 		mass=1;
