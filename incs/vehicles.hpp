@@ -41,7 +41,7 @@ class CfgVehicles
         scope = 2;
         author = "NotSure";
         displayName = "Storage";
-        model = "\A3\Structures_F\Civ\Camping\TentDome_F";
+        model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
         icon = "";
         mapsize = 2;
         maximumLoad = 10000;
@@ -53,7 +53,7 @@ class CfgVehicles
         armor = 100;
 
         class EventHandlers:EventHandlers{
-            init="_storage = _this select 0; _storage addAction ['Attache Lock',{_storage = _this select 0;systemChat 'make storage lockable';}, [], 6, false, false, '', '', 2, false];";
+            init="_storage = _this select 0; _storage addAction ['Attache Lock',{_storage = _this select 0;createVehicle['bde_storage_lock',position _storage,[],0,'CAN_COLLIDE'];removeVehicle _storage;];}, [], 6, false, false, '', '', 2, false];";
         };
     };
 
@@ -62,7 +62,7 @@ class CfgVehicles
         scope = 2;
         author = "NotSure";
         displayName = "Storage with Lock";
-        model = "\A3\Structures_F\Civ\Camping\TentDome_F";
+        model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
         icon = "";
         mapsize = 2;
         maximumLoad = 10000;
