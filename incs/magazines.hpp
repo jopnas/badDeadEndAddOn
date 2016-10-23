@@ -303,7 +303,7 @@ class cfgMagazines
 		scope=2;
 		author = "NotSure";
 		displayName="Gasmask Filter";
-		picture = "\bde\pics\Antibiotic.paa";
+		picture = "\bde\pics\bde_gasmask_filter.paa";
 		model = "\bde\models\bde_gasmask_filter";
         count=1;
 	};
@@ -454,17 +454,6 @@ class cfgMagazines
         count=1;
     };
 
-    class bde_lock: CA_Magazine
-	{
-		mass=1;
-		scope=2;
-		author = "NotSure";
-		displayName="Lock";
-		picture = "\bde\pics\lock.paa";
-		model = "\bde\models\lock";
-        count=1;
-	};
-
     class bde_cable: CA_Magazine
 	{
 		mass=1;
@@ -472,7 +461,7 @@ class cfgMagazines
 		author = "NotSure";
 		displayName="Cable";
 		picture = "\bde\pics\lock.paa";
-		model = "\A3\Structures_F_EPA\Items\Tools\MetalWire_Fs";
+		model = "\A3\Structures_F_EPA\Items\Tools\MetalWire_F";
         count=1;
 	};
 
@@ -482,8 +471,8 @@ class cfgMagazines
 		scope=2;
 		author = "NotSure";
 		displayName="Codelock Panel";
-		picture = "\bde\pics\lock.paa";
-		model = "\bde\models\lock";
+		picture = "\bde\pics\bde_codelock_panel.paa";
+		model = "\bde\models\bde_codelock_panel";
         count=1;
 	};
 
@@ -493,8 +482,8 @@ class cfgMagazines
 		scope=2;
 		author = "NotSure";
 		displayName="Codelock";
-		picture = "\bde\pics\lock.paa";
-		model = "\bde\models\lock";
+        picture = "\bde\pics\bde_codelock_panel.paa";
+		model = "\bde\models\bde_codelock_panel";
         count=1;
 	};
 

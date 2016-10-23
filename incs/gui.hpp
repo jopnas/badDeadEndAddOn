@@ -73,10 +73,10 @@ class codelockGUI {
         {
             idc = 1213;
             text = "#(argb,8,8,3)color(0,0,0,1)";
-            x = 11.5 * GUI_GRID_W + GUI_GRID_X;
-            y = 2 * c + GUI_GRID_Y;
-            w = 17.5 * GUI_GRID_W;
-            h = 20.5 * GUI_GRID_H;
+            x = 11.5;
+            y = 2;
+            w = 17.5;
+            h = 20.5;
             colorBackground[] = {0,0,0,1};
             colorText[] = {1,1,1,1};
         };
@@ -84,19 +84,19 @@ class codelockGUI {
         {
             idc = 1214;
             text = "1";
-            x = 14 * GUI_GRID_W + GUI_GRID_X;
-            y = 3 * GUI_GRID_H + GUI_GRID_Y;
-            w = 3 * GUI_GRID_W;
-            h = 3 * GUI_GRID_H;
+            x = 14;
+            y = 3;
+            w = 3;
+            h = 3;
         };
         class bdeCodelockButton2: codeLockNum
         {
             idc = 1215;
             text = "2";
-            x = 19 * GUI_GRID_W + GUI_GRID_X;
-            y = 3 * GUI_GRID_H + GUI_GRID_Y;
-            w = 3 * GUI_GRID_W;
-            h = 3 * GUI_GRID_H;
+            x = 19;
+            y = 3 ;
+            w = 3;
+            h = 3;
         };
         class bdeCodelockButton3: codeLockNum
         {

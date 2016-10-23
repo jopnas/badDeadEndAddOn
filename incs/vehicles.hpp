@@ -52,9 +52,9 @@ class CfgVehicles
         destrType = "DestructTent";
         armor = 100;
 
-        class EventHandlers:EventHandlers{
+        /*class EventHandlers:EventHandlers{
             init="_storage = _this select 0; _storage addAction ['Attache Lock',{_storage = _this select 0;createVehicle['bde_storage_lock',position _storage,[],0,'CAN_COLLIDE'];removeVehicle _storage;];}, [], 6, false, false, '', '', 2, false];";
-        };
+        };*/
     };
 
     class bde_storage_lock:ContainerSupply
@@ -73,9 +73,9 @@ class CfgVehicles
         destrType = "DestructTent";
         armor = 100;
 
-        class EventHandlers:EventHandlers{
+        /*class EventHandlers:EventHandlers {
             init="_storage = _this select 0; _storage addAction ['Lock Storage',{_storage = _this select 0;_storage setVariable['bde_storage_locked',true,true];}, [], 6, false, false, '', '!(_target getVariable['bde_storage_locked',true]) && (_target getVariable['bde_storage_owner',0] == getPlayerUID _this)', 2, false];_storage addAction ['Unlock Storage',{_storage = _this select 0;_storage setVariable['bde_storage_locked',false,true];}, [], 6, false, false, '', '(_target getVariable['bde_storage_locked',true]) && (_target getVariable['bde_storage_owner',0] == getPlayerUID _this)', 2, false];";
-        };
+        };*/
     };
 
     class bde_storage_underground:ContainerSupply
@@ -83,7 +83,7 @@ class CfgVehicles
         scope = 2;
         author = "NotSure";
         displayName = "Storage Underground";
-        model = "\A3\Structures_F\Walls\Rampart_F";
+        model = "\A3\Structures_F\Training\ShootingPos_F";
         icon = "";
         mapsize = 2;
         maximumLoad = 10000;
