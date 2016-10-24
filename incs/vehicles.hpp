@@ -41,7 +41,7 @@ class CfgVehicles
         scope = 2;
         author = "NotSure";
         displayName = "Storage";
-        model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
+        model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
         icon = "";
         mapsize = 2;
         maximumLoad = 10000;
@@ -51,10 +51,6 @@ class CfgVehicles
         camouflage = 2;
         destrType = "DestructTent";
         armor = 100;
-
-        /*class EventHandlers:EventHandlers{
-            init="_storage = _this select 0; _storage addAction ['Attache Lock',{_storage = _this select 0;createVehicle['bde_storage_lock',position _storage,[],0,'CAN_COLLIDE'];removeVehicle _storage;];}, [], 6, false, false, '', '', 2, false];";
-        };*/
     };
 
     class bde_storage_lock:ContainerSupply
@@ -62,7 +58,7 @@ class CfgVehicles
         scope = 2;
         author = "NotSure";
         displayName = "Storage with Lock";
-        model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
+        model = "\A3\weapons_F\AmmoBoxes\WpnsBox_F";
         icon = "";
         mapsize = 2;
         maximumLoad = 10000;
@@ -72,10 +68,6 @@ class CfgVehicles
         camouflage = 2;
         destrType = "DestructTent";
         armor = 100;
-
-        /*class EventHandlers:EventHandlers {
-            init="_storage = _this select 0; _storage addAction ['Lock Storage',{_storage = _this select 0;_storage setVariable['bde_storage_locked',true,true];}, [], 6, false, false, '', '!(_target getVariable['bde_storage_locked',true]) && (_target getVariable['bde_storage_owner',0] == getPlayerUID _this)', 2, false];_storage addAction ['Unlock Storage',{_storage = _this select 0;_storage setVariable['bde_storage_locked',false,true];}, [], 6, false, false, '', '(_target getVariable['bde_storage_locked',true]) && (_target getVariable['bde_storage_owner',0] == getPlayerUID _this)', 2, false];";
-        };*/
     };
 
     class bde_storage_underground:ContainerSupply

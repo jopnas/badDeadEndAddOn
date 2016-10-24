@@ -388,6 +388,28 @@ class cfgMagazines
         count=1;
 	};
 
+	class bde_wrench: CA_Magazine
+	{
+		mass=3;
+		scope=2;
+		author = "NotSure";
+		displayName="Wrench";
+		picture = "\bde\pics\hatchet.paa";
+		model = "\A3\Structures_F\Items\Tools\Wrench_F";
+        count=1;
+	};
+
+	class bde_multitool: CA_Magazine
+	{
+		mass=3;
+		scope=2;
+		author = "NotSure";
+		displayName="Multitool";
+		picture = "\bde\pics\hatchet.paa";
+		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+        count=1;
+	};
+
 	class bde_fuelCanisterEmpty: CA_Magazine
 	{
 		mass=10;
@@ -461,7 +483,7 @@ class cfgMagazines
 		author = "NotSure";
 		displayName="Cable";
 		picture = "\bde\pics\lock.paa";
-		model = "\A3\Structures_F_EPA\Items\Tools\MetalWire_F";
+		model = "\A3\Structures_F\Items\Electronics\ExtensionCord_F";
         count=1;
 	};
 
