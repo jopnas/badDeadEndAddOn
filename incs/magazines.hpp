@@ -62,27 +62,6 @@ class cfgMagazines
 
 	// Drink
 	// Plastic Bottle
-	class bde_bottleuseless: CA_Magazine
-	{
-		mass=2;
-		scope=2;
-		author = "NotSure";
-		displayName="Plastic Bottle (Useless)";
-		picture = "\bde\pics\bottleempty.paa";
-		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
-		count=1;
-	};
-
-	class bde_bottleempty: CA_Magazine
-	{
-		mass=2;
-		scope=2;
-		author = "NotSure";
-		displayName="Plastic Bottle (Empty)";
-		picture = "\bde\pics\bottleempty.paa";
-		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
-		count=1;
-	};
 	class bde_bottlefilled: CA_Magazine
 	{
 		mass=2;
@@ -105,6 +84,61 @@ class cfgMagazines
         count=1;
 	};
 
+	class bde_bottleclean_3_4: CA_Magazine
+	{
+		mass=2;
+		scope=2;
+		author = "NotSure";
+		displayName="Plastic Bottle (Clean Water, 3/4 filled)";
+		picture = "\bde\pics\bottleclean.paa";
+		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
+        count=1;
+	};
+
+	class bde_bottleclean_2_4: CA_Magazine
+	{
+		mass=2;
+		scope=2;
+		author = "NotSure";
+		displayName="Plastic Bottle (Clean Water, 2/4 filled)";
+		picture = "\bde\pics\bottleclean.paa";
+		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
+        count=1;
+	};
+
+	class bde_bottleclean_1_4: CA_Magazine
+	{
+		mass=2;
+		scope=2;
+		author = "NotSure";
+		displayName="Plastic Bottle (Clean Water, 1/4 filled)";
+		picture = "\bde\pics\bottleclean.paa";
+		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
+        count=1;
+	};
+
+    class bde_bottleempty: CA_Magazine
+	{
+		mass=2;
+		scope=2;
+		author = "NotSure";
+		displayName="Plastic Bottle (Empty)";
+		picture = "\bde\pics\bottleempty.paa";
+		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
+		count=1;
+	};
+
+    class bde_bottleuseless: CA_Magazine
+    {
+        mass=2;
+        scope=2;
+        author = "NotSure";
+        displayName="Plastic Bottle (Useless)";
+        picture = "\bde\pics\bottleempty.paa";
+        model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
+        count=1;
+    };
+
 	// Canteen
 	class bde_canteenempty: CA_Magazine
 	{
@@ -123,6 +157,39 @@ class cfgMagazines
 		scope=2;
 		author = "NotSure";
 		displayName="Canteen (Clean Water)";
+		picture = "\bde\pics\canteen_empty.paa";
+		model="\A3\structures_f_epa\Items\Food\Canteen_F";
+        count=1;
+	};
+
+	class bde_canteenfilled_3_4: CA_Magazine
+	{
+		mass=2;
+		scope=2;
+		author = "NotSure";
+		displayName="Canteen (Clean Water, about 3/4 filled)";
+		picture = "\bde\pics\canteen_empty.paa";
+		model="\A3\structures_f_epa\Items\Food\Canteen_F";
+        count=1;
+	};
+
+	class bde_canteenfilled_2_4: CA_Magazine
+	{
+		mass=2;
+		scope=2;
+		author = "NotSure";
+		displayName="Canteen (Clean Water, about 2/4 filled)";
+		picture = "\bde\pics\canteen_empty.paa";
+		model="\A3\structures_f_epa\Items\Food\Canteen_F";
+        count=1;
+	};
+
+	class bde_canteenfilled_1_4: CA_Magazine
+	{
+		mass=2;
+		scope=2;
+		author = "NotSure";
+		displayName="Canteen (Clean Water, about 1/4 filled)";
 		picture = "\bde\pics\canteen_empty.paa";
 		model="\A3\structures_f_epa\Items\Food\Canteen_F";
         count=1;
