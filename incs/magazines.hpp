@@ -82,6 +82,7 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        ouputItem = "bde_bottleclean_3_4";
 	};
 
 	class bde_bottleclean_3_4: CA_Magazine
@@ -93,6 +94,7 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        ouputItem = "bde_bottleclean_2_4";
 	};
 
 	class bde_bottleclean_2_4: CA_Magazine
@@ -104,6 +106,7 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        ouputItem = "bde_bottleclean_1_4";
 	};
 
 	class bde_bottleclean_1_4: CA_Magazine
@@ -115,6 +118,7 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        ouputItem = "bde_bottleempty";
 	};
 
     class bde_bottleempty: CA_Magazine
