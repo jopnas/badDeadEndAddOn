@@ -342,6 +342,83 @@ class cfgMagazines
         count=1;
 	};
 
+	class bde_ducttape_6: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Ducttape";
+		picture = "\bde\pics\ducttape.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
+        count=1;
+	};
+
+	class bde_ducttape_5: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Ducttape";
+		picture = "\bde\pics\ducttape.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
+        count=1;
+	};
+
+	class bde_ducttape_4: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Ducttape (half roll)";
+		picture = "\bde\pics\ducttape.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
+        count=1;
+	};
+
+	class bde_ducttape_3: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Ducttape (less than half a roll)";
+		picture = "\bde\pics\ducttape.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
+        count=1;
+	};
+
+	class bde_ducttape_2: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Ducttape (less than half a roll)";
+		picture = "\bde\pics\ducttape.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
+        count=1;
+	};
+
+	class bde_ducttape_1: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Ducttape (almost empty)";
+		picture = "\bde\pics\ducttape.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
+        count=1;
+	};
+
+	class bde_ducttape_empty: CA_Magazine
+	{
+		mass=1;
+		scope=2;
+		author = "NotSure";
+		displayName="Ducttape (empty roll)";
+		picture = "\bde\pics\ducttape.paa";
+		model = "\A3\Structures_F_EPA\Items\Tools\DuctTape_F";
+        count=1;
+	};
+
     // Vehicle Parts
 	class bde_wheel: CA_Magazine
 	{
