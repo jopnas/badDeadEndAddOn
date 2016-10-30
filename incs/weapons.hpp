@@ -6,7 +6,7 @@ class cfgWeapons
 	// Item Model Replacement
 	class ItemMap
 	{
-		model = "\A3\Structures_F\Items\Documents\Map_unfolded_F";
+		model = "\bde\models\bde_map";
 	};
 	class ItemCompass
 	{
