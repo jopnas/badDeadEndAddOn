@@ -552,10 +552,64 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
+        itemActionNames[] = {
+            "Screwdriver",
+            "Tongs",
+            "Knife"
+        };
+        itemActionOutputs[] = {
+            "bde_multitool_screwdriver",
+            "bde_multitool_tongs",
+            "bde_multitool_knife"
+        };
+	};
+
+	class bde_multitool_screwdriver: CA_Magazine
+	{
+		mass=3;
+		scope=2;
+		author = "NotSure";
+		displayName="Multitool";
+		picture = "\bde\pics\hatchet.paa";
+		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+        count=1;
         itemActions[] = {
-            ["Collapse","bde_multitool_collapsed",[]],
-            ["Screwdriver","bde_multitool_screwdriver",[]]
-        }
+            ["Collapse","bde_multitool",[]],
+            ["Knife","bde_multitool_knife",[]],
+            ["Tongs","bde_multitool_tongs",[]]
+        };
+	};
+
+	class bde_multitool_knife: CA_Magazine
+	{
+		mass=3;
+		scope=2;
+		author = "NotSure";
+		displayName="Multitool";
+		picture = "\bde\pics\hatchet.paa";
+		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+        count=1;
+        itemActions[] = {
+            ["Collapse","bde_multitool",[]],
+            ["Screwdriver","bde_multitool_screwdriver",[]],
+            ["Tongs","bde_multitool_tongs",[]]
+        };
+	};
+
+	class bde_multitool_tongs: CA_Magazine
+	{
+		mass=3;
+		scope=2;
+		author = "NotSure";
+		displayName="Multitool";
+		picture = "\bde\pics\hatchet.paa";
+		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+        count=1;
+        itemActions[] = {
+            ["Collapse","bde_multitool",[]],
+            ["Screwdriver","bde_multitool_screwdriver",[]],
+            ["Knife","bde_multitool_knife",[]]
+        };
 	};
 
 	class bde_fuelCanisterEmpty: CA_Magazine
