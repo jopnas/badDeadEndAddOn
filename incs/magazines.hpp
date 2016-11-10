@@ -62,7 +62,7 @@ class cfgMagazines
 
 	// Drink
 	// Plastic Bottle
-	class bde_bottlefilled: CA_Magazine
+	class bde_bottledirty: CA_Magazine
 	{
 		mass=2;
 		scope=2;
@@ -82,6 +82,10 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        itemActions[] = {
+            "'Drink clean water','bde_bottleclean_3_4',''",
+            "'Empty bottle','bde_bottleempty',''"
+        };
 	};
 
 	class bde_bottleclean_3_4: CA_Magazine
@@ -205,6 +209,9 @@ class cfgMagazines
 		picture = "\bde\pics\canunknown.paa";
 		model = "\bde\models\canunknown";
         count=1;
+        itemActions[] = {
+            "'Eat something','bde_emptycanunknown','bde_multitool_tinopener'"
+        };
 	};
 
 	class bde_emptycanunknown: CA_Magazine
@@ -555,12 +562,14 @@ class cfgMagazines
         itemActionNames[] = {
             "Screwdriver",
             "Tongs",
-            "Knife"
+            "Knife",
+            "Tin Opener"
         };
         itemActionOutputs[] = {
             "bde_multitool_screwdriver",
             "bde_multitool_tongs",
-            "bde_multitool_knife"
+            "bde_multitool_knife",
+            "bde_multitool_tinopener"
         };
 	};
 
@@ -576,7 +585,8 @@ class cfgMagazines
         itemActions[] = {
             ["Collapse","bde_multitool",[]],
             ["Knife","bde_multitool_knife",[]],
-            ["Tongs","bde_multitool_tongs",[]]
+            ["Tongs","bde_multitool_tongs",[]],
+            ["Tin Opener","bde_multitool_tinopener",[]]
         };
 	};
 
@@ -589,11 +599,6 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
-        itemActions[] = {
-            ["Collapse","bde_multitool",[]],
-            ["Screwdriver","bde_multitool_screwdriver",[]],
-            ["Tongs","bde_multitool_tongs",[]]
-        };
 	};
 
 	class bde_multitool_tongs: CA_Magazine
@@ -605,11 +610,17 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
-        itemActions[] = {
-            ["Collapse","bde_multitool",[]],
-            ["Screwdriver","bde_multitool_screwdriver",[]],
-            ["Knife","bde_multitool_knife",[]]
-        };
+	};
+
+	class bde_multitool_tinopener: CA_Magazine
+	{
+		mass=3;
+		scope=2;
+		author = "NotSure";
+		displayName="Multitool";
+		picture = "\bde\pics\hatchet.paa";
+		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+        count=1;
 	};
 
 	class bde_fuelCanisterEmpty: CA_Magazine
