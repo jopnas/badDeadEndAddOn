@@ -45,4 +45,9 @@ class cfgWeapons
             };
         };
     };
+
+    // Weapons
+    /*class bde_remington870 {
+
+    };*/
 };
