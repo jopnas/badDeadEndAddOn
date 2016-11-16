@@ -496,12 +496,23 @@ class cfgMagazines
     // Vehicle Parts
 	class bde_wheel: CA_Magazine
 	{
-		mass=20;
+		mass=30;
 		scope=2;
 		author = "NotSure";
 		displayName="Wheel";
 		picture = "\bde\pics\wheel.paa";
 		model = "\bde\models\wheel";
+        count=1;
+	};
+
+	class bde_vehicle_battery: CA_Magazine
+	{
+		mass=15;
+		scope=2;
+		author = "NotSure";
+        displayName = "Vehicle Battery";
+		picture = "\bde\pics\wheel.paa";
+        model = "\A3\Structures_F_Bootcamp\Items\Electronics\CarBattery_02_F";
         count=1;
 	};
 
@@ -733,4 +744,39 @@ class cfgMagazines
 		model = "\A3\Structures_F\Items\Tools\Gloves_F.p3d";
         count=1;
 	};
+
+    // For Weapons
+        //class B_12Gauge_Slug : BulletBase
+        //class B_12Gauge_Pellets : ShotgunBase
+    class bde_12Gauge_Pellets {
+        author = "NotSure";
+        scope = 2;
+        displayName = "8 x Pellets";
+        ammo = "B_12Gauge_Pellets";
+        count = 8;
+        initSpeed = 396;
+        picture = "\bde\pics\fuelcan_filled.paa";
+        descriptionShort = "Caliber: 12 gauge
+        Rounds: 8 Pellets
+        Used in: M1014";
+        mass = 6;
+        value = 1;
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        modelSpecial = "";
+        useAction = 0;
+        useActionTitle = "";
+        reloadAction = "";
+        type = 256;
+        selectionFireAnim = "zasleh";
+        nameSound = "magazine";
+        maxLeadSpeed = 23;
+        weaponpoolavailable = 1;
+        simulation = "ProxyMagazines";
+        displayNameShort = "";
+        weight = 0;
+        maxThrowHoldTime = 2;
+        minThrowIntensityCoef = 0.3;
+        maxThrowIntensityCoef = 1.4;
+        quickReload = 0;
+    };
 };
