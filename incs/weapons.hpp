@@ -47,7 +47,15 @@ class cfgWeapons
     };
 
     // Weapons
-    /*class bde_remington870 {
-
-    };*/
+    class srifle_DMR_06_olive_F;
+    class bde_remington870:srifle_DMR_06_olive_F {
+        author = "NotSure";
+        scope = 2;
+        displayName = "Remington 870";
+        descriptionShort = "Remington 870
+        12Gauge";
+        magazine[] = {"bde_12Gauge_Pellets"};
+        autoFire = false;
+        autoReload = false;
+    };
 };

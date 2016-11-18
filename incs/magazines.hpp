@@ -208,9 +208,9 @@ class cfgMagazines
 		displayName="Unknown Can";
 		picture = "\bde\pics\canunknown.paa";
 		model = "\bde\models\canunknown";
-        count=1;
+        count=1
         itemActions[] = {
-            "'Eat something','bde_emptycanunknown','bde_multitool_tinopener'"
+            "'Eat from unlabled can','bde_emptycanunknown','bde_multitool_tinopener','ground'"
         };
 	};
 
@@ -570,17 +570,11 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
-        itemActionNames[] = {
-            "Screwdriver",
-            "Tongs",
-            "Knife",
-            "Tin Opener"
-        };
-        itemActionOutputs[] = {
-            "bde_multitool_screwdriver",
-            "bde_multitool_tongs",
-            "bde_multitool_knife",
-            "bde_multitool_tinopener"
+        itemActions[] = {
+            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
+            "'Tongs','bde_multitool_tongs','',cargo",
+            "'Knife','bde_multitool_knife','','cargo'",
+            "'Tin Opener','bde_multitool_tinopener','','cargo'"
         };
 	};
 
@@ -594,10 +588,10 @@ class cfgMagazines
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
         itemActions[] = {
-            ["Collapse","bde_multitool",[]],
-            ["Knife","bde_multitool_knife",[]],
-            ["Tongs","bde_multitool_tongs",[]],
-            ["Tin Opener","bde_multitool_tinopener",[]]
+            "'Collapse','bde_multitool','','cargo'",
+            "'Tongs','bde_multitool_tongs','',cargo",
+            "'Knife','bde_multitool_knife','','cargo'",
+            "'Tin Opener','bde_multitool_tinopener','','cargo'"
         };
 	};
 
@@ -610,6 +604,10 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
+        "'Collapse','bde_multitool','','cargo'",
+        "'Screwdriver','bde_multitool_screwdriver','','cargo'",
+        "'Tongs','bde_multitool_tongs','',cargo",
+        "'Tin Opener','bde_multitool_tinopener','','cargo'"
 	};
 
 	class bde_multitool_tongs: CA_Magazine
@@ -621,6 +619,10 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
+        "'Collapse','bde_multitool','','cargo'",
+        "'Screwdriver','bde_multitool_screwdriver','','cargo'",
+        "'Knife','bde_multitool_knife','','cargo'",
+        "'Tin Opener','bde_multitool_tinopener','','cargo'"
 	};
 
 	class bde_multitool_tinopener: CA_Magazine
@@ -632,6 +634,10 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
+        "'Collapse','bde_multitool','','cargo'",
+        "'Screwdriver','bde_multitool_screwdriver','','cargo'",
+        "'Tongs','bde_multitool_tongs','',cargo",
+        "'Knife','bde_multitool_knife','','cargo'",
 	};
 
 	class bde_fuelCanisterEmpty: CA_Magazine
