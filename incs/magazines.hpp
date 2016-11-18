@@ -603,11 +603,13 @@ class cfgMagazines
 		displayName="Multitool";
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
-        count=1;
-        "'Collapse','bde_multitool','','cargo'",
-        "'Screwdriver','bde_multitool_screwdriver','','cargo'",
-        "'Tongs','bde_multitool_tongs','',cargo",
-        "'Tin Opener','bde_multitool_tinopener','','cargo'"
+        count = 1;
+        itemActions[] = {
+            "'Collapse','bde_multitool','','cargo'",
+            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
+            "'Tongs','bde_multitool_tongs','',cargo",
+            "'Tin Opener','bde_multitool_tinopener','','cargo'"
+	    };
 	};
 
 	class bde_multitool_tongs: CA_Magazine
@@ -619,10 +621,12 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
-        "'Collapse','bde_multitool','','cargo'",
-        "'Screwdriver','bde_multitool_screwdriver','','cargo'",
-        "'Knife','bde_multitool_knife','','cargo'",
-        "'Tin Opener','bde_multitool_tinopener','','cargo'"
+        itemActions[] = {
+            "'Collapse','bde_multitool','','cargo'",
+            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
+            "'Knife','bde_multitool_knife','','cargo'",
+            "'Tin Opener','bde_multitool_tinopener','','cargo'"
+	    };
 	};
 
 	class bde_multitool_tinopener: CA_Magazine
@@ -634,10 +638,12 @@ class cfgMagazines
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
-        "'Collapse','bde_multitool','','cargo'",
-        "'Screwdriver','bde_multitool_screwdriver','','cargo'",
-        "'Tongs','bde_multitool_tongs','',cargo",
-        "'Knife','bde_multitool_knife','','cargo'",
+        itemActions[] = {
+            "'Collapse','bde_multitool','','cargo'",
+            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
+            "'Tongs','bde_multitool_tongs','',cargo",
+            "'Knife','bde_multitool_knife','','cargo'",
+	    };
 	};
 
 	class bde_fuelCanisterEmpty: CA_Magazine
@@ -762,9 +768,7 @@ class cfgMagazines
         count = 8;
         initSpeed = 396;
         picture = "\bde\pics\fuelcan_filled.paa";
-        descriptionShort = "Caliber: 12 gauge
-        Rounds: 8 Pellets
-        Used in: M1014";
+        descriptionShort = "Caliber: 12 gauge Rounds: 8 Pellets Used in: M1014";
         mass = 6;
         value = 1;
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
