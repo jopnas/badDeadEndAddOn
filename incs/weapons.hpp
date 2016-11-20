@@ -48,13 +48,14 @@ class cfgWeapons
 
     // Weapons
     class srifle_DMR_06_olive_F;
-    class bde_remington870:srifle_DMR_06_olive_F {
+    class bde_spas12:srifle_DMR_06_olive_F {
         author = "NotSure";
         scope = 2;
-        displayName = "Remington 870";
-        descriptionShort = "Remington 870 12Gauge";
-        magazines[] = {"bde_12Gauge_Pellets"};
+        displayName = "Spas-12";
+        descriptionShort = "Spas-12";
+        magazines[] = {"bde_12gauge_pellets"};
         autoFire = false;
         autoReload = false;
+        model = "\bde\models\bde_w_spas12";
     };
 };

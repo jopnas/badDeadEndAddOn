@@ -760,15 +760,15 @@ class cfgMagazines
     // For Weapons
         //class B_12Gauge_Slug : BulletBase
         //class B_12Gauge_Pellets : ShotgunBase
-    class bde_12Gauge_Pellets {
+    class bde_12gauge_pellets {
         author = "NotSure";
         scope = 2;
-        displayName = "8 x Pellets";
+        displayName = "Pellets";
         ammo = "B_12Gauge_Pellets";
         count = 8;
         initSpeed = 396;
         picture = "\bde\pics\fuelcan_filled.paa";
-        descriptionShort = "Caliber: 12 gauge Rounds: 8 Pellets Used in: M1014";
+        descriptionShort = "Caliber: 12 gauge Rounds: 8 Pellets Used in: Spas-12";
         mass = 6;
         value = 1;
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
