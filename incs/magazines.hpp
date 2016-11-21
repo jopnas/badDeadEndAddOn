@@ -202,15 +202,21 @@ class cfgMagazines
 	// Food
 	class bde_canunknown: CA_Magazine
 	{
-		mass=1;
-		scope=2;
+		mass = 1;
+		scope = 2;
 		author = "NotSure";
-		displayName="Unknown Can";
+		displayName = "Unlabeled Can";
 		picture = "\bde\pics\canunknown.paa";
 		model = "\bde\models\canunknown";
-        count=1
-        itemActions[] = {
-            "'Eat from unlabled can','bde_emptycanunknown','bde_multitool_tinopener','ground'"
+        count = 1;
+        class itemActions {
+            class action1 {
+                actionText = "Eat";
+                outputItem = "bde_emptycanunknown";
+                consumesItems[] = {};
+                requiredItems[] = {"bde_multitool_canopener"};
+                putOutputItem = "ground";
+            };
         };
 	};
 
@@ -566,15 +572,40 @@ class cfgMagazines
 		mass=3;
 		scope=2;
 		author = "NotSure";
-		displayName="Multitool";
+		displayName="Multitool (Collapsed)";
 		picture = "\bde\pics\hatchet.paa";
-		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+		model = "\A3\Structures_F_EPB\Items\Military\Magazine_rifle_F";
         count=1;
-        itemActions[] = {
-            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
-            "'Tongs','bde_multitool_tongs','',cargo",
-            "'Knife','bde_multitool_knife','','cargo'",
-            "'Tin Opener','bde_multitool_tinopener','','cargo'"
+
+        class itemActions {
+            class action1 {
+                actionText = "Screwdriver";
+                outputItem = "bde_multitool_screwdriver";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action2 {
+                actionText = "Pliers";
+                outputItem = "bde_multitool_pliers";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action3 {
+                actionText = "Knife";
+                outputItem = "bde_multitool_knife";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action4 {
+                actionText = "Can Opener";
+                outputItem = "bde_multitool_canopener";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
         };
 	};
 
@@ -583,15 +614,40 @@ class cfgMagazines
 		mass=3;
 		scope=2;
 		author = "NotSure";
-		displayName="Multitool";
+		displayName="Multitool (Screwdriver)";
 		picture = "\bde\pics\hatchet.paa";
 		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
         count=1;
-        itemActions[] = {
-            "'Collapse','bde_multitool','','cargo'",
-            "'Tongs','bde_multitool_tongs','',cargo",
-            "'Knife','bde_multitool_knife','','cargo'",
-            "'Tin Opener','bde_multitool_tinopener','','cargo'"
+
+        class itemActions {
+            class action1 {
+                actionText = "Collapse";
+                outputItem = "bde_multitool";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action2 {
+                actionText = "Pliers";
+                outputItem = "bde_multitool_pliers";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action3 {
+                actionText = "Knife";
+                outputItem = "bde_multitool_knife";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action4 {
+                actionText = "Can Opener";
+                outputItem = "bde_multitool_canopener";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
         };
 	};
 
@@ -600,50 +656,125 @@ class cfgMagazines
 		mass=3;
 		scope=2;
 		author = "NotSure";
-		displayName="Multitool";
+		displayName="Multitool (knife)";
 		picture = "\bde\pics\hatchet.paa";
-		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+		model = "\A3\Structures_F\Items\Tools\Grinder_F";
         count = 1;
-        itemActions[] = {
-            "'Collapse','bde_multitool','','cargo'",
-            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
-            "'Tongs','bde_multitool_tongs','',cargo",
-            "'Tin Opener','bde_multitool_tinopener','','cargo'"
-	    };
+
+        class itemActions {
+            class action1 {
+                actionText = "Collapse";
+                outputItem = "bde_multitool";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action2 {
+                actionText = "Screwdriver";
+                outputItem = "bde_multitool_screwdriver";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action3 {
+                actionText = "Pliers";
+                outputItem = "bde_multitool_pliers";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action4 {
+                actionText = "Can Opener";
+                outputItem = "bde_multitool_canopener";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+        };
 	};
 
-	class bde_multitool_tongs: CA_Magazine
+	class bde_multitool_pliers: CA_Magazine
 	{
 		mass=3;
 		scope=2;
 		author = "NotSure";
-		displayName="Multitool";
+		displayName="Multitool (Pliers)";
 		picture = "\bde\pics\hatchet.paa";
-		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+		model = "\A3\Structures_F\Items\Tools\Pliers_F";
         count=1;
-        itemActions[] = {
-            "'Collapse','bde_multitool','','cargo'",
-            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
-            "'Knife','bde_multitool_knife','','cargo'",
-            "'Tin Opener','bde_multitool_tinopener','','cargo'"
-	    };
+
+        class itemActions {
+            class action1 {
+                actionText = "Collapse";
+                outputItem = "bde_multitool";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action2 {
+                actionText = "Screwdriver";
+                outputItem = "bde_multitool_screwdriver";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action3 {
+                actionText = "Knife";
+                outputItem = "bde_multitool_knife";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action4 {
+                actionText = "Can Opener";
+                outputItem = "bde_multitool_canopener";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+        };
 	};
 
-	class bde_multitool_tinopener: CA_Magazine
+	class bde_multitool_canopener: CA_Magazine
 	{
 		mass=3;
 		scope=2;
 		author = "NotSure";
-		displayName="Multitool";
+		displayName="Multitool (can opener)";
 		picture = "\bde\pics\hatchet.paa";
-		model = "\A3\Structures_F\Items\Tools\Screwdriver_V2_F";
+		model = "\A3\Structures_F_EPA\Items\Tools\CanOpener_F";
         count=1;
-        itemActions[] = {
-            "'Collapse','bde_multitool','','cargo'",
-            "'Screwdriver','bde_multitool_screwdriver','','cargo'",
-            "'Tongs','bde_multitool_tongs','',cargo",
-            "'Knife','bde_multitool_knife','','cargo'",
-	    };
+
+        class itemActions {
+            class action1 {
+                actionText = "Collapse";
+                outputItem = "bde_multitool";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action1 {
+                actionText = "Screwdriver";
+                outputItem = "bde_multitool_screwdriver";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action2 {
+                actionText = "Pliers";
+                outputItem = "bde_multitool_pliers";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+            class action3 {
+                actionText = "Knife";
+                outputItem = "bde_multitool_knife";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+            };
+        };
 	};
 
 	class bde_fuelCanisterEmpty: CA_Magazine
@@ -771,7 +902,7 @@ class cfgMagazines
         descriptionShort = "Caliber: 12 gauge Rounds: 8 Pellets Used in: Spas-12";
         mass = 6;
         value = 1;
-        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        model = "\A3\weapons_f\ammo\cartridge_slug";
         modelSpecial = "";
         useAction = 0;
         useActionTitle = "";
