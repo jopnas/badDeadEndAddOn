@@ -209,6 +209,7 @@ class cfgMagazines
 		picture = "\bde\pics\canunknown.paa";
 		model = "\bde\models\canunknown";
         count = 1;
+
         class itemActions {
             class action1 {
                 actionText = "Eat";
@@ -216,6 +217,8 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {"bde_multitool_canopener"};
                 putOutputItem = "ground";
+                actionTime = 10;
+                customFunction = "";
             };
         };
 	};
@@ -240,6 +243,18 @@ class cfgMagazines
 		picture = "\bde\pics\canpasta.paa";
 		model = "\bde\models\can_pasta";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Eat";
+                outputItem = "bde_emptycanunknown";
+                consumesItems[] = {};
+                requiredItems[] = {"bde_multitool_canopener"};
+                putOutputItem = "ground";
+                actionTime = 10;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_emptycanpasta: CA_Magazine
@@ -584,6 +599,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action2 {
                 actionText = "Pliers";
@@ -591,6 +609,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action3 {
                 actionText = "Knife";
@@ -598,6 +619,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action4 {
                 actionText = "Can Opener";
@@ -605,6 +629,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
         };
 	};
@@ -626,6 +653,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
             };
             class action2 {
                 actionText = "Pliers";
@@ -633,6 +663,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action3 {
                 actionText = "Knife";
@@ -640,6 +673,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action4 {
                 actionText = "Can Opener";
@@ -647,6 +683,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
         };
 	};
@@ -668,6 +707,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
             };
             class action2 {
                 actionText = "Screwdriver";
@@ -675,6 +717,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action3 {
                 actionText = "Pliers";
@@ -682,6 +727,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action4 {
                 actionText = "Can Opener";
@@ -689,6 +737,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
         };
 	};
@@ -710,6 +761,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
             };
             class action2 {
                 actionText = "Screwdriver";
@@ -717,6 +771,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action3 {
                 actionText = "Knife";
@@ -724,6 +781,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action4 {
                 actionText = "Can Opener";
@@ -731,6 +791,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
         };
 	};
@@ -752,6 +815,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
             };
             class action1 {
                 actionText = "Screwdriver";
@@ -759,6 +825,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action2 {
                 actionText = "Pliers";
@@ -766,6 +835,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
             class action3 {
                 actionText = "Knife";
@@ -773,6 +845,9 @@ class cfgMagazines
                 consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
+                actionTime = 4;
+                actionSound = "";
+                customFunction = "";
             };
         };
 	};
