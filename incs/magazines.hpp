@@ -243,6 +243,7 @@ class cfgMagazines
 		picture = "\bde\pics\canpasta.paa";
 		model = "\bde\models\can_pasta";
         count=1;
+
         class itemActions {
             class action1 {
                 actionText = "Eat";
@@ -278,6 +279,19 @@ class cfgMagazines
 		picture = "\bde\pics\meat_big.paa";
 		model="\bde\models\meat_big";
         count=1;
+
+        class itemActions {
+            class action1 {
+                actionText = "Eat";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 	class bde_meat_big_cooked: CA_Magazine
 	{
@@ -288,6 +302,19 @@ class cfgMagazines
 		picture = "\bde\pics\meat_big_cooked.paa";
 		model="\bde\models\meat_big_cooked";
         count=1;
+
+        class itemActions {
+            class action1 {
+                actionText = "Eat";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_meat_small: CA_Magazine
@@ -299,6 +326,19 @@ class cfgMagazines
 		picture = "\bde\pics\meat_small.paa";
 		model="\bde\models\meat_small";
         count=1;
+
+        class itemActions {
+            class action1 {
+                actionText = "Eat";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_meat_small_cooked: CA_Magazine
@@ -310,6 +350,19 @@ class cfgMagazines
 		picture = "\bde\pics\meat_small_cooked.paa";
 		model="\bde\models\meat_small_cooked";
         count=1;
+
+        class itemActions {
+            class action1 {
+                actionText = "Eat";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
     // Fruits
@@ -322,6 +375,19 @@ class cfgMagazines
 		picture = "\bde\pics\apple.paa";
         model="\bde\models\apple";
         count=1;
+
+        class itemActions {
+            class action1 {
+                actionText = "Eat";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
     // Soda
@@ -334,6 +400,19 @@ class cfgMagazines
         picture = "\bde\pics\soda.paa";
         model = "\bde\models\soda_can_01";
         count=1;
+
+        class itemActions {
+            class action1 {
+                actionText = "Drink";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
     };
 
     class bde_sodacan_01_trash: CA_Magazine
@@ -401,6 +480,30 @@ class cfgMagazines
 		picture = "\bde\pics\bde_gasmask_filter.paa";
 		model = "\bde\models\bde_gasmask_filter";
         count=1;
+
+        class itemActions {
+            class action1 {
+                actionText = "Attache filter";
+                outputItem = "";
+                consumesItems[] = {"bde_gasmask_empty"};
+                requiredItems[] = {"bde_gasmask_empty"};
+                putOutputItem = "bde_gasmask";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+
+            class action2 {
+                actionText = "Change filter";
+                outputItem = "";
+                consumesItems[] = {"bde_gasmask_wasted"};
+                requiredItems[] = {"bde_gasmask_wasted"};
+                putOutputItem = "bde_gasmask";
+                actionTime = 10;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
 	// Objects
@@ -413,6 +516,18 @@ class cfgMagazines
 		picture = "\bde\pics\stone.paa";
 		model = "\A3\Weapons_f\ammo\stone_2";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Build Fireplace";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 0;
+                actionSound = "";
+                customFunction = "bde_fnc_buildFireplace";
+            };
+	    };
 	};
 
 	class bde_wood: CA_Magazine
@@ -424,6 +539,18 @@ class cfgMagazines
 		picture = "\bde\pics\wood.paa";
 		model = "\bde\models\woodlog";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Build Fireplace";
+                outputItem = "";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "";
+                actionTime = 0;
+                actionSound = "";
+                customFunction = "bde_fnc_buildFireplace";
+            };
+	    };
 	};
 
 	class bde_ducttape: CA_Magazine
