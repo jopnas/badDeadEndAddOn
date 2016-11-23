@@ -484,10 +484,10 @@ class cfgMagazines
         class itemActions {
             class action1 {
                 actionText = "Attache filter";
-                outputItem = "";
+                outputItem = "bde_gasmask";
                 consumesItems[] = {"bde_gasmask_empty"};
                 requiredItems[] = {"bde_gasmask_empty"};
-                putOutputItem = "bde_gasmask";
+                putOutputItem = "cargo";
                 actionTime = 5;
                 actionSound = "";
                 customFunction = "";
@@ -495,10 +495,10 @@ class cfgMagazines
 
             class action2 {
                 actionText = "Change filter";
-                outputItem = "";
+                outputItem = "bde_gasmask";
                 consumesItems[] = {"bde_gasmask_wasted"};
                 requiredItems[] = {"bde_gasmask_wasted"};
-                putOutputItem = "bde_gasmask";
+                putOutputItem = "cargo";
                 actionTime = 10;
                 actionSound = "";
                 customFunction = "";
@@ -1086,7 +1086,7 @@ class cfgMagazines
 		author = "NotSure";
 		displayName="Scarf";
 		picture = "\bde\pics\fuelcan_filled.paa";
-		model = "\A3\Structures_F\Items\Tools\Gloves_F.p3d";
+		model = "\A3\Structures_F\Items\Tools\Gloves_F";
         count=1;
 	};
 
