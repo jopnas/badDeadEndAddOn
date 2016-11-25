@@ -1,4 +1,5 @@
 #include "\incs\patches.hpp"
+#include "\incs\anims.hpp"
 #include "\incs\vehicles.hpp"
 #include "\incs\ammo.hpp"
 #include "\incs\magazines.hpp"

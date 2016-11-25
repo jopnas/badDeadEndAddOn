@@ -10,12 +10,15 @@ class cfgWeapons
     class Pistol;
     class GrenadeLauncher;
 
+    class ItemMap;
+    class ItemCompass;
+
 	// Item Model Replacement
-	class ItemMap
+	class ItemMap : ItemMap
 	{
 		model = "\bde\models\bde_map";
 	};
-	class ItemCompass
+	class ItemCompass:ItemCompass
 	{
 		model = "\A3\Structures_F\Items\Gadgets\Compass_F";
 	};
@@ -78,15 +81,15 @@ class cfgWeapons
 		autoReload = true;
 		magazineReloadTime = 0;
 
-		//soundBullet[] = {"emptySound", 1};
-		//drySound[] = {"", 1, 1};
-		//reloadMagazineSound[] = {"", 1, 1};
+		soundBullet[] = {"emptySound", 1};
+		drySound[] = {"", 1, 1};
+		reloadMagazineSound[] = {"", 1, 1};
 
 		//cursor = "Vehicle_Grenade_W";
 		//cursorAim = "\ca\Weapons\Data\clear_empty";
 		cursorSize = 1;
 
-		//handAnim[] = {"OFP2_ManSkeleton","\dayz_weapons\anim\melee_hatchet_holding.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\bde\anims\melee_hatchet_holding.rtm"};
 
 		modes[] = {Single};
 
