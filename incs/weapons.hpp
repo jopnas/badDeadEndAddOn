@@ -1,7 +1,14 @@
+class Mode_Burst;
+class Mode_FullAuto;
+class HandGrenade;
+
 class cfgWeapons
 {
     class ItemCore;
     class HeadgearItem;
+    class Rifle;
+    class Pistol;
+    class GrenadeLauncher;
 
 	// Item Model Replacement
 	class ItemMap
@@ -56,6 +63,48 @@ class cfgWeapons
         magazines[] = {"bde_12gauge_pellets"};
         autoFire = false;
         autoReload = false;
+        model = "\bde\models\bde_w_spas12";
+    };
+
+    class bde_melee_weapon : Rifle
+	{
+		isMelee = true;
+
+		distanceZoomMin = 50;
+		distanceZoomMax = 50;
+		fireLightDuration = 0;
+		fireLightIntensity = 0;
+
+		autoReload = true;
+		magazineReloadTime = 0;
+
+		//soundBullet[] = {"emptySound", 1};
+		//drySound[] = {"", 1, 1};
+		//reloadMagazineSound[] = {"", 1, 1};
+
+		//cursor = "Vehicle_Grenade_W";
+		//cursorAim = "\ca\Weapons\Data\clear_empty";
+		cursorSize = 1;
+
+		//handAnim[] = {"OFP2_ManSkeleton","\dayz_weapons\anim\melee_hatchet_holding.rtm"};
+
+		modes[] = {Single};
+
+		class Single : Mode_FullAuto
+		{
+			displayName = "";
+			dispersion = 0.1;
+			reloadTime = 1;
+		};
+};
+
+    class bde_melee_katana : bde_melee_weapon
+    {
+        author = "NotSure";
+        scope = 2;
+        displayName = "Katana";
+        descriptionShort = "very sharp";
+        magazines[] = {"bde_melee_magazine"};
         model = "\bde\models\bde_w_spas12";
     };
 };

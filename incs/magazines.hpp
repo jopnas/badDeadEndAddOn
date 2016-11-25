@@ -1122,4 +1122,17 @@ class cfgMagazines
         maxThrowIntensityCoef = 1.4;
         quickReload = 0;
     };
+
+
+    class bde_melee_magazine : CA_Magazine
+    {
+    	type = 0;
+        scope = 2;
+        displayName = "Melee";
+        displayNameMagazine = "Melee";
+        shortNameMagazine = "Melee";
+        count = 100000;
+        initSpeed = 100;
+        ammo = "bde_melee_ammo";
+    };
 };

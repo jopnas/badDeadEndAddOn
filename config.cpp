@@ -1,6 +1,6 @@
 #include "\incs\patches.hpp"
 #include "\incs\vehicles.hpp"
-class CfgAmmo;
+#include "\incs\ammo.hpp"
 #include "\incs\magazines.hpp"
 #include "\incs\weapons.hpp"
 #include "\incs\glasses.hpp"
