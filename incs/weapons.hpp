@@ -1,6 +1,8 @@
+class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class HandGrenade;
+class WeaponSlotsInfo;
 
 class cfgWeapons
 {
@@ -67,6 +69,18 @@ class cfgWeapons
         autoFire = false;
         autoReload = false;
         model = "\bde\models\bde_w_spas12";
+
+        modes[] = {Single};
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+        };
+
+        class Single : Mode_SemiAuto
+        {
+
+        };
     };
 
     class bde_melee_weapon : Rifle
