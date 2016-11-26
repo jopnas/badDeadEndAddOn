@@ -1101,7 +1101,7 @@ class cfgMagazines
         ammo = "B_12Gauge_Pellets";
         count = 8;
         initSpeed = 396;
-        picture = "\bde\pics\bde_12gauge_pellets.paa";
+        picture = "\bde\pics\iconSpas12.paa";
         descriptionShort = "Caliber: 12 gauge Rounds: 8 Pellets Used in: Spas-12";
         mass = 6;
         value = 1;

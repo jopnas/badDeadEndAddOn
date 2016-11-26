@@ -2,7 +2,6 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class HandGrenade;
-class WeaponSlotsInfo;
 
 class cfgWeapons
 {
@@ -16,11 +15,11 @@ class cfgWeapons
     class ItemCompass;
 
 	// Item Model Replacement
-	class ItemMap : ItemMap
+	class ItemMap
 	{
 		model = "\bde\models\bde_map";
 	};
-	class ItemCompass:ItemCompass
+	class ItemCompass
 	{
 		model = "\A3\Structures_F\Items\Gadgets\Compass_F";
 	};
@@ -60,23 +59,18 @@ class cfgWeapons
 
     // Weapons
     class srifle_DMR_06_olive_F;
-    class bde_spas12:srifle_DMR_06_olive_F {
+    class bde_spas12:srifle_DMR_06_olive_F
+    {
         author = "NotSure";
         scope = 2;
         displayName = "Spas-12";
         descriptionShort = "Spas-12";
+        picture = "\bde\pics\iconSpas12.paa";
         magazines[] = {"bde_12gauge_pellets"};
         autoFire = false;
         autoReload = false;
         model = "\bde\models\bde_w_spas12";
-
         modes[] = {Single};
-
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-        };
-
         class Single : Mode_SemiAuto
         {
 
@@ -122,6 +116,7 @@ class cfgWeapons
         displayName = "Katana";
         descriptionShort = "very sharp";
         magazines[] = {"bde_melee_magazine"};
-        model = "\bde\models\bde_w_spas12";
+        picture = "\bde\pics\hatchet.paa";
+        model = "\A3\Structures_F\Items\Tools\Axe_F";
     };
 };
