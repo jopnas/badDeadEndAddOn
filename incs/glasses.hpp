@@ -14,7 +14,7 @@ class CfgGlasses
                 actionText = "Detache filter";
                 outputItem = "bde_gasmask_empty";
                 consumesItems[] = {"bde_gasmask"};
-                requiredItems[] = {""};
+                requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 5;
                 actionSound = "";
@@ -34,7 +34,7 @@ class CfgGlasses
             class action1 {
                 actionText = "Change filter";
                 outputItem = "bde_gasmask";
-                consumesItems[] = {"bde_gasmask_filter"};
+                consumesItems[] = {"bde_gasmask_filter","bde_gasmask_wasted"};
                 requiredItems[] = {"bde_gasmask_filter"};
                 putOutputItem = "cargo";
                 actionTime = 10;
@@ -54,7 +54,7 @@ class CfgGlasses
             class action1 {
                 actionText = "Attache filter";
                 outputItem = "bde_gasmask";
-                consumesItems[] = {"bde_gasmask_filter"};
+                consumesItems[] = {"bde_gasmask_filter","bde_gasmask_empty"};
                 requiredItems[] = {"bde_gasmask_filter"};
                 putOutputItem = "cargo";
                 actionTime = 5;

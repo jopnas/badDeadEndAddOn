@@ -65,15 +65,25 @@ class cfgWeapons
         scope = 2;
         displayName = "Spas-12";
         descriptionShort = "Spas-12";
-        picture = "\bde\pics\iconSpas12.paa";
+        picture = "\bde\pics\gear_spas12.paa";
         magazines[] = {"bde_12gauge_pellets"};
+        allowedslots[] = {701,901};
         autoFire = false;
         autoReload = false;
+        reloadTime = 5.0;
         model = "\bde\models\bde_w_spas12";
         modes[] = {Single};
         class Single : Mode_SemiAuto
         {
-
+            class BaseSoundModeType;
+			/*class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"JPEX_MK14_Shot_SoundSet","JPEX_MK14_Tail_SoundSet","JPEX_FRAME_RIFLE_REFLECTORS","JPEX_FRAME_NOISE_LAYER_762MM"};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"JPEX_MK14_Shot_Silenced_SoundSet","JPEX_MK14_Tail_Silenced_SoundSet","JPEX_FRAME_NOISE_LAYER_762MM"};
+			};*/
         };
     };
 
