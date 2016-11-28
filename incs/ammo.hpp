@@ -24,8 +24,8 @@ class CfgAmmo {
         tracerColor[] = {0, 0, 0, 0};
         tracerColorR[] = {0, 0, 0, 0};
         typicalSpeed = 50;
-        //explosionEffects = "ImpactBlood";
-        //craterEffects = "ImpactEffectsBlood";
+        explosionEffects = "ImpactBlood";
+        craterEffects = "ImpactEffectsBlood";
         //model = "\ca\Weapons\shell";
         caliber = 0.22;
     };

@@ -1093,7 +1093,7 @@ class cfgMagazines
     // Weapons
         //class B_12Gauge_Slug : BulletBase
         //class B_12Gauge_Pellets : ShotgunBase
-    class bde_12gauge_pellets : CA_Magazine
+    class bde_8rnd_12gauge_pellets : CA_Magazine
     {
         author = "NotSure";
         scope = 2;
@@ -1101,7 +1101,7 @@ class cfgMagazines
         ammo = "B_12Gauge_Pellets";
         count = 8;
         initSpeed = 396;
-        picture = "\bde\pics\bde_12gauge_pellets.paa";
+        picture = "\bde\pics\magazines\bde_8rnd_12gauge_pellets.paa";
         descriptionShort = "Caliber: 12 gauge Rounds: 8 Pellets Used in: Spas-12";
         mass = 6;
         value = 1;

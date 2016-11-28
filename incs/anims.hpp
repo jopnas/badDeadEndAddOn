@@ -1,3 +1,15 @@
+class CfgMovesBasic {
+	class ManActions {
+		GestureSwing = " ";
+	};
+
+	class Actions {
+		class NoActions : ManActions {
+			GestureSwing[] = {"GestureSwing", "Gesture"};
+		};
+	};
+};
+
 class CfgGesturesMale {
 	skeletonName = "OFP2_ManSkeleton";
 
@@ -57,7 +69,7 @@ class CfgGesturesMale {
 
 	class States {
 		class GestureSwing : Default {
-			file = "\bde\anims\melee_hatchet_swing.rtm";
+			file = "\bde\anim\melee_hatchet_swing.rtm";
 			looped = false;
 			speed = 1.28205;
 			mask = "handsWeapon";
