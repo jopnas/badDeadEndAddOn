@@ -404,10 +404,10 @@ class cfgMagazines
         class itemActions {
             class action1 {
                 actionText = "Drink";
-                outputItem = "";
+                outputItem = "bde_sodacan_01_trash";
                 consumesItems[] = {};
                 requiredItems[] = {};
-                putOutputItem = "";
+                putOutputItem = "ground";
                 actionTime = 5;
                 actionSound = "";
                 customFunction = "";
@@ -723,7 +723,7 @@ class cfgMagazines
             class action1 {
                 actionText = "Screwdriver";
                 outputItem = "bde_multitool_screwdriver";
-                consumesItems[] = {"bde_multitools"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -733,7 +733,7 @@ class cfgMagazines
             class action2 {
                 actionText = "Pliers";
                 outputItem = "bde_multitool_pliers";
-                consumesItems[] = {"bde_multitools"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -743,7 +743,7 @@ class cfgMagazines
             class action3 {
                 actionText = "Knife";
                 outputItem = "bde_multitool_knife";
-                consumesItems[] = {"bde_multitools"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -753,7 +753,7 @@ class cfgMagazines
             class action4 {
                 actionText = "Can Opener";
                 outputItem = "bde_multitool_canopener";
-                consumesItems[] = {"bde_multitools"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -777,7 +777,7 @@ class cfgMagazines
             class action1 {
                 actionText = "Collapse";
                 outputItem = "bde_multitool";
-                consumesItems[] = {"bde_multitool_screwdriver"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
@@ -787,7 +787,7 @@ class cfgMagazines
             class action2 {
                 actionText = "Pliers";
                 outputItem = "bde_multitool_pliers";
-                consumesItems[] = {"bde_multitool_screwdriver"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -797,7 +797,7 @@ class cfgMagazines
             class action3 {
                 actionText = "Knife";
                 outputItem = "bde_multitool_knife";
-                consumesItems[] = {"bde_multitool_screwdriver"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -807,7 +807,7 @@ class cfgMagazines
             class action4 {
                 actionText = "Can Opener";
                 outputItem = "bde_multitool_canopener";
-                consumesItems[] = {"bde_multitool_screwdriver"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -831,7 +831,7 @@ class cfgMagazines
             class action1 {
                 actionText = "Collapse";
                 outputItem = "bde_multitool";
-                consumesItems[] = {"bde_multitool_knife"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
@@ -841,7 +841,7 @@ class cfgMagazines
             class action2 {
                 actionText = "Screwdriver";
                 outputItem = "bde_multitool_screwdriver";
-                consumesItems[] = {"bde_multitool_knife"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -851,7 +851,7 @@ class cfgMagazines
             class action3 {
                 actionText = "Pliers";
                 outputItem = "bde_multitool_pliers";
-                consumesItems[] = {"bde_multitool_knife"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -861,7 +861,7 @@ class cfgMagazines
             class action4 {
                 actionText = "Can Opener";
                 outputItem = "bde_multitool_canopener";
-                consumesItems[] = {"bde_multitool_knife"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -885,7 +885,7 @@ class cfgMagazines
             class action1 {
                 actionText = "Collapse";
                 outputItem = "bde_multitool";
-                consumesItems[] = {"bde_multitool_pliers"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
@@ -895,7 +895,7 @@ class cfgMagazines
             class action2 {
                 actionText = "Screwdriver";
                 outputItem = "bde_multitool_screwdriver";
-                consumesItems[] = {"bde_multitool_pliers"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -905,7 +905,7 @@ class cfgMagazines
             class action3 {
                 actionText = "Knife";
                 outputItem = "bde_multitool_knife";
-                consumesItems[] = {"bde_multitool_pliers"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -915,7 +915,7 @@ class cfgMagazines
             class action4 {
                 actionText = "Can Opener";
                 outputItem = "bde_multitool_canopener";
-                consumesItems[] = {"bde_multitool_pliers"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -939,7 +939,7 @@ class cfgMagazines
             class action1 {
                 actionText = "Collapse";
                 outputItem = "bde_multitool";
-                consumesItems[] = {"bde_multitool_canopener"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
@@ -949,7 +949,7 @@ class cfgMagazines
             class action1 {
                 actionText = "Screwdriver";
                 outputItem = "bde_multitool_screwdriver";
-                consumesItems[] = {"bde_multitool_canopener"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -959,7 +959,7 @@ class cfgMagazines
             class action2 {
                 actionText = "Pliers";
                 outputItem = "bde_multitool_pliers";
-                consumesItems[] = {"bde_multitool_canopener"};
+                consumesItems[] = {};
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
@@ -969,8 +969,8 @@ class cfgMagazines
             class action3 {
                 actionText = "Knife";
                 outputItem = "bde_multitool_knife";
-                consumesItems[] = {"bde_multitool_canopener"};
-                requiredItems[] = {};
+                consumesItems[] = {};
+/                requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
                 actionSound = "";

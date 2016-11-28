@@ -91,15 +91,10 @@ class cfgWeapons
 
         fireSpreadAngle = 0.784825;
 
-        modes[] = {Single,Pump};
+        modes[] = {Single};
         class Single : Mode_SemiAuto
  		{
             displayName = "Semi Automatic";
- 		};
-
-        class Pump : Mode_SemiAuto
- 		{
-            displayName = "Pump Action";
  		};
 
         class WeaponSlotsInfo
@@ -160,6 +155,7 @@ class cfgWeapons
 
 		autoReload = true;
 		magazineReloadTime = 0;
+        magazines[] = {"bde_melee_magazine"};
 
 		soundBullet[] = {"emptySound", 1};
 		drySound[] = {"", 1, 1};
@@ -187,7 +183,6 @@ class cfgWeapons
         scope = 2;
         displayName = "Katana";
         descriptionShort = "very sharp";
-        magazines[] = {"bde_melee_magazine"};
         picture = "\bde\pics\hatchet.paa";
         model = "\A3\Structures_F\Items\Tools\Axe_F";
     };
