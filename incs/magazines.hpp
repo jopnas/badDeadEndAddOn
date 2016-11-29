@@ -82,9 +82,27 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
-        itemActions[] = {
-            "'Drink clean water','bde_bottleclean_3_4',''",
-            "'Empty bottle','bde_bottleempty',''"
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_bottleclean_3_4";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
+            };
+            class action2 {
+                actionText = "Empty bottle";
+                outputItem = "bde_bottleempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 10;
+                actionSound = "";
+                customFunction = "";
+            };
         };
 	};
 
@@ -97,6 +115,28 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_bottleclean_2_4";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
+            };
+            class action2 {
+                actionText = "Empty bottle";
+                outputItem = "bde_bottleempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 7.5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_bottleclean_2_4: CA_Magazine
@@ -108,6 +148,28 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_bottleclean_1_4";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
+            };
+            class action2 {
+                actionText = "Empty bottle";
+                outputItem = "bde_bottleempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_bottleclean_1_4: CA_Magazine
@@ -119,6 +181,28 @@ class cfgMagazines
 		picture = "\bde\pics\bottleclean.paa";
 		model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_bottleempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
+            };
+            class action2 {
+                actionText = "Empty bottle";
+                outputItem = "bde_bottleempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2.5;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
 	};
 
     class bde_bottleempty: CA_Magazine
@@ -141,6 +225,18 @@ class cfgMagazines
         picture = "\bde\pics\bottleempty.paa";
         model="\A3\structures_f_epa\Items\Food\bottleplastic_v2_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Repair bottle";
+                outputItem = "bde_bottleempty";
+                consumesItems[] = {"bde_ducttape"};
+                requiredItems[] = {"bde_ducttape"};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "";
+                customFunction = "";
+            };
+        };
     };
 
 	// Canteen
@@ -218,6 +314,7 @@ class cfgMagazines
                 requiredItems[] = {"bde_multitool_canopener"};
                 putOutputItem = "ground";
                 actionTime = 10;
+                actionSound = "";
                 customFunction = "";
             };
         };
@@ -247,7 +344,7 @@ class cfgMagazines
         class itemActions {
             class action1 {
                 actionText = "Eat";
-                outputItem = "bde_emptycanunknown";
+                outputItem = "bde_emptycanpasta";
                 consumesItems[] = {};
                 requiredItems[] = {"bde_multitool_canopener"};
                 putOutputItem = "ground";
@@ -285,7 +382,7 @@ class cfgMagazines
                 actionText = "Eat";
                 outputItem = "";
                 consumesItems[] = {};
-                requiredItems[] = {};
+                requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "";
@@ -308,7 +405,7 @@ class cfgMagazines
                 actionText = "Eat";
                 outputItem = "";
                 consumesItems[] = {};
-                requiredItems[] = {};
+                requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "";
@@ -332,7 +429,7 @@ class cfgMagazines
                 actionText = "Eat";
                 outputItem = "";
                 consumesItems[] = {};
-                requiredItems[] = {};
+                requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "";
@@ -356,7 +453,7 @@ class cfgMagazines
                 actionText = "Eat";
                 outputItem = "";
                 consumesItems[] = {};
-                requiredItems[] = {};
+                requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "";
@@ -1090,25 +1187,25 @@ class cfgMagazines
         count=1;
 	};
 
-    // Weapons
+    // Weapon Magazines
         //class B_12Gauge_Slug : BulletBase
         //class B_12Gauge_Pellets : ShotgunBase
     class bde_8rnd_12gauge_pellets : CA_Magazine
     {
         author = "NotSure";
         scope = 2;
-        displayName = "Pellets";
+        displayName = "8 x 12 gauge Pellets";
         ammo = "B_12Gauge_Pellets";
         count = 8;
         initSpeed = 396;
         picture = "\bde\pics\magazines\bde_8rnd_12gauge_pellets.paa";
-        descriptionShort = "Caliber: 12 gauge Rounds: 8 Pellets Used in: Spas-12";
+        descriptionShort = "Caliber: 12 gauge\nRounds: 8 Pellets\nUsed in: Spas-12";
         mass = 6;
         value = 1;
         model = "\A3\weapons_f\ammo\cartridge_slug";
         modelSpecial = "";
-        useAction = 0;
-        useActionTitle = "";
+        useAction = 1;
+        useActionTitle = "Reload Pellets";
         reloadAction = "";
         type = 256;
         selectionFireAnim = "zasleh";
@@ -1124,6 +1221,36 @@ class cfgMagazines
         quickReload = 0;
     };
 
+    class bde_8rnd_12gauge_slugs : CA_Magazine
+    {
+        author = "NotSure";
+        scope = 2;
+        displayName = "8 x 12 gauge Slugs";
+        ammo = "B_12Gauge_Slug";
+        count = 8;
+        initSpeed = 396;
+        picture = "\bde\pics\magazines\bde_8rnd_12gauge_pellets.paa";
+        descriptionShort = "Caliber: 12 gauge\nRounds: 8 Slugs\nUsed in: Spas-12";
+        mass = 6;
+        value = 1;
+        model = "\A3\weapons_f\ammo\cartridge_slug";
+        modelSpecial = "";
+        useAction = 1;
+        useActionTitle = "Reload Slugs";
+        reloadAction = "current";
+        type = 256;
+        selectionFireAnim = "zasleh";
+        nameSound = "magazine";
+        maxLeadSpeed = 23;
+        weaponpoolavailable = 1;
+        simulation = "ProxyMagazines";
+        displayNameShort = "";
+        weight = 0;
+        maxThrowHoldTime = 2;
+        minThrowIntensityCoef = 0.3;
+        maxThrowIntensityCoef = 1.4;
+        quickReload = 0;
+    };
 
     class bde_melee_magazine : CA_Magazine
     {

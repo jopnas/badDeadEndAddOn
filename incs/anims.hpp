@@ -1,11 +1,13 @@
 class CfgMovesBasic {
 	class ManActions {
 		GestureSwing = " ";
+		GesturePunch = " ";
 	};
 
 	class Actions {
 		class NoActions : ManActions {
 			GestureSwing[] = {"GestureSwing", "Gesture"};
+			GesturePunch[] = {"GesturePunch", "Gesture"};
 		};
 	};
 };
@@ -70,6 +72,16 @@ class CfgGesturesMale {
 	class States {
 		class GestureSwing : Default {
 			file = "\bde\anims\melee_hatchet_swing.rtm";
+			looped = false;
+			speed = 1.28205;
+			mask = "handsWeapon";
+			headBobStrength = 0.2;
+			headBobMode = 2;
+			rightHandIKBeg = false;
+			rightHandIKEnd = false;
+		};
+		class GesturePunch : Default {
+			file = "\bde\anims\melee_punch.rtm";
 			looped = false;
 			speed = 1.28205;
 			mask = "handsWeapon";
