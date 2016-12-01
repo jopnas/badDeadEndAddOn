@@ -90,7 +90,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
-                actionSound = "";
+                actionSound = "drinkSound0";
                 customFunction = "";
             };
             class action2 {
@@ -100,7 +100,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 10;
-                actionSound = "";
+                actionSound = "fillSound0";
                 customFunction = "";
             };
         };
@@ -123,7 +123,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
-                actionSound = "";
+                actionSound = "drinkSound0";
                 customFunction = "";
             };
             class action2 {
@@ -133,7 +133,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 7.5;
-                actionSound = "";
+                actionSound = "fillSound0";
                 customFunction = "";
             };
         };
@@ -156,7 +156,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
-                actionSound = "";
+                actionSound = "drinkSound0";
                 customFunction = "";
             };
             class action2 {
@@ -166,7 +166,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 5;
-                actionSound = "";
+                actionSound = "fillSound0";
                 customFunction = "";
             };
         };
@@ -189,7 +189,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2;
-                actionSound = "";
+                actionSound = "drinkSound0";
                 customFunction = "";
             };
             class action2 {
@@ -199,7 +199,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 2.5;
-                actionSound = "";
+                actionSound = "fillSound0";
                 customFunction = "";
             };
         };
@@ -314,7 +314,7 @@ class cfgMagazines
                 requiredItems[] = {"bde_multitool_canopener"};
                 putOutputItem = "ground";
                 actionTime = 10;
-                actionSound = "";
+                actionSound = "eatSound0";
                 customFunction = "";
             };
         };
@@ -349,7 +349,7 @@ class cfgMagazines
                 requiredItems[] = {"bde_multitool_canopener"};
                 putOutputItem = "ground";
                 actionTime = 10;
-                actionSound = "";
+                actionSound = "eatSound0";
                 customFunction = "";
             };
         };
@@ -385,7 +385,7 @@ class cfgMagazines
                 requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
-                actionSound = "";
+                actionSound = "eatSound0";
                 customFunction = "";
             };
         };
@@ -408,7 +408,7 @@ class cfgMagazines
                 requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
-                actionSound = "";
+                actionSound = "eatSound0";
                 customFunction = "";
             };
         };
@@ -432,7 +432,7 @@ class cfgMagazines
                 requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
-                actionSound = "";
+                actionSound = "eatSound0";
                 customFunction = "";
             };
         };
@@ -456,7 +456,7 @@ class cfgMagazines
                 requiredItems[] = {"bde_multitool_knife"};
                 putOutputItem = "";
                 actionTime = 5;
-                actionSound = "";
+                actionSound = "eatSound0";
                 customFunction = "";
             };
         };
@@ -481,7 +481,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "";
                 actionTime = 5;
-                actionSound = "";
+                actionSound = "eatSound0";
                 customFunction = "";
             };
         };
@@ -506,7 +506,7 @@ class cfgMagazines
                 requiredItems[] = {};
                 putOutputItem = "ground";
                 actionTime = 5;
-                actionSound = "";
+                actionSound = "drinkSound0";
                 customFunction = "";
             };
         };
