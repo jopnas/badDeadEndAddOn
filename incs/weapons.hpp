@@ -66,15 +66,17 @@ class cfgWeapons
         scope = 2;
         displayName = "Spas-12";
         descriptionShort = "Spas-12";
+        nameSound = "rifle";
         picture = "\bde\pics\weapons\gear_spas12.paa";
-        magazines[] = {"bde_8rnd_12gauge_pellets"};
+        magazines[] = {"bde_8rnd_12gauge_pellets","bde_8rnd_12gauge_slug"};
+        model = "\bde\models\bde_w_spas12";
 
         autoFire = false;
         autoReload = false;
         reloadTime = 0.15;
-        model = "\bde\models\bde_w_spas12";
+        reloadAction = "GestureReloadEBR";
 
-        nertia = 0.5;
+        inertia = 0.5;
         bullet1[] = {"a3\sounds_f\weapons\Shells\shotgun\metal_shotgun_01",0.501187,1,15};
         bullet2[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_02",0.501187,1,15};
         bullet3[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_03",0.501187,1,15};
@@ -89,12 +91,30 @@ class cfgWeapons
         bullet12[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_04",0.223872,1,15};
         soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
 
-        fireSpreadAngle = 0.784825;
+        fireSpreadAngle = 0.6789;
 
-        modes[] = {Single};
+        changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl",0.316228,1,5};
+        drySound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl",0.562341,1,10};
+        reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL",0.562341,1,10};
+
+        modes[] = {"Single"};
         class Single : Mode_SemiAuto
  		{
-            displayName = "Semi Automatic";
+            class BaseSoundModeType
+            class StandardSound : BaseSoundModeType;
+            sounds[] = {"StandardSound"};
+            dispersion = 0.003;
+            soundContinuous = 0;
+            reloadTime = 0.5;
+            magazineReloadTime = 6;
+            recoil = "recoil_single_primary_5outof10";
+            recoilProne = "recoil_single_primary_prone_5outof10";
+            minRange = 0;
+            minRangeProbab = 0.5;
+            midRange = 60;
+            midRangeProbab = 0.2;
+            maxRange = 100;
+            maxRangeProbab = 0.03;
  		};
 
         class WeaponSlotsInfo
@@ -167,7 +187,7 @@ class cfgWeapons
 
 		handAnim[] = {"OFP2_ManSkeleton","\bde\anims\melee_hatchet_holding.rtm"};
 
-		modes[] = {Single};
+		modes[] = {"Single"};
 
 		class Single : Mode_FullAuto
 		{

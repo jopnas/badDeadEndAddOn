@@ -1188,13 +1188,11 @@ class cfgMagazines
 	};
 
     // Weapon Magazines
-        //class B_12Gauge_Slug : BulletBase
-        //class B_12Gauge_Pellets : ShotgunBase
     class bde_8rnd_12gauge_pellets : CA_Magazine
     {
         author = "NotSure";
         scope = 2;
-        displayName = "8 x 12 gauge Pellets";
+        displayName = "8Rnd. Pellets";
         ammo = "B_12Gauge_Pellets";
         count = 8;
         initSpeed = 396;
@@ -1204,8 +1202,8 @@ class cfgMagazines
         value = 1;
         model = "\A3\weapons_f\ammo\cartridge_slug";
         modelSpecial = "";
-        useAction = 1;
-        useActionTitle = "Reload Pellets";
+        useAction = 0;
+        useActionTitle = "";
         reloadAction = "";
         type = 256;
         selectionFireAnim = "zasleh";
@@ -1221,35 +1219,13 @@ class cfgMagazines
         quickReload = 0;
     };
 
-    class bde_8rnd_12gauge_slugs : CA_Magazine
+    class bde_8rnd_12gauge_slug : bde_8rnd_12gauge_pellets
     {
         author = "NotSure";
         scope = 2;
-        displayName = "8 x 12 gauge Slugs";
+        displayName = "8Rnd. Slug";
         ammo = "B_12Gauge_Slug";
-        count = 8;
-        initSpeed = 396;
-        picture = "\bde\pics\magazines\bde_8rnd_12gauge_pellets.paa";
-        descriptionShort = "Caliber: 12 gauge\nRounds: 8 Slugs\nUsed in: Spas-12";
-        mass = 6;
-        value = 1;
-        model = "\A3\weapons_f\ammo\cartridge_slug";
-        modelSpecial = "";
-        useAction = 1;
-        useActionTitle = "Reload Slugs";
-        reloadAction = "current";
-        type = 256;
-        selectionFireAnim = "zasleh";
-        nameSound = "magazine";
-        maxLeadSpeed = 23;
-        weaponpoolavailable = 1;
-        simulation = "ProxyMagazines";
-        displayNameShort = "";
-        weight = 0;
-        maxThrowHoldTime = 2;
-        minThrowIntensityCoef = 0.3;
-        maxThrowIntensityCoef = 1.4;
-        quickReload = 0;
+        descriptionShort = "Caliber: 12 gauge\nRounds: 8 Slug\nUsed in: Spas-12";
     };
 
     class bde_melee_magazine : CA_Magazine
