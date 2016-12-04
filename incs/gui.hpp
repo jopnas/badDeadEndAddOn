@@ -39,4 +39,3 @@ class InventoryActionMenu: RscListbox
     maxHistoryDelay = 1; // Time since last keyboard type search to reset it
     canDrag = 0; // 1 (true) to allow item dragging
 };
-

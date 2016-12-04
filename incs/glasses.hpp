@@ -27,8 +27,10 @@ class CfgGlasses
     {
         author = "NotSure";
         displayname = "Gasmask (wasted filter)";
-        model = "\bde\models\bde_gasmask_wasted.p3d";
-        picture = "\bde\pics\bde_gasmask_wasted.paa";
+        model = "\bde\models\bde_gasmask.p3d";
+        // model = "\bde\models\bde_gasmask_empty.p3d";
+        picture = "\bde\pics\bde_gasmask.paa";
+        // picture = "\bde\pics\bde_gasmask_empty.paa";
         mass = 10;
         class itemActions {
             class action1 {
@@ -43,6 +45,7 @@ class CfgGlasses
             };
         };
     };
+    
     class bde_gasmask_empty:bde_gasmask
     {
         author = "NotSure";

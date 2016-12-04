@@ -1043,7 +1043,7 @@ class cfgMagazines
                 actionSound = "";
                 customFunction = "";
             };
-            class action1 {
+            class action2 {
                 actionText = "Screwdriver";
                 outputItem = "bde_multitool_screwdriver";
                 consumesItems[] = {};
@@ -1053,7 +1053,7 @@ class cfgMagazines
                 actionSound = "";
                 customFunction = "";
             };
-            class action2 {
+            class action3 {
                 actionText = "Pliers";
                 outputItem = "bde_multitool_pliers";
                 consumesItems[] = {};
@@ -1063,11 +1063,11 @@ class cfgMagazines
                 actionSound = "";
                 customFunction = "";
             };
-            class action3 {
+            class action4 {
                 actionText = "Knife";
                 outputItem = "bde_multitool_knife";
                 consumesItems[] = {};
-/                requiredItems[] = {};
+                requiredItems[] = {};
                 putOutputItem = "cargo";
                 actionTime = 4;
                 actionSound = "";

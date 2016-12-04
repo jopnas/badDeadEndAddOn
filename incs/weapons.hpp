@@ -2,7 +2,6 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 class HandGrenade;
-class SlotInfo;
 
 class cfgWeapons
 {
@@ -16,12 +15,15 @@ class cfgWeapons
     class ItemCompass;
 
 	// Item Model Replacement
-	class ItemMap
+	class bde_map:ItemMap
 	{
+        scope = 2;
 		model = "\bde\models\bde_map";
 	};
-	class ItemCompass
+
+	class bde_compass:ItemCompass
 	{
+        scope = 2;
 		model = "\A3\Structures_F\Items\Gadgets\Compass_F";
 	};
 
@@ -59,8 +61,12 @@ class cfgWeapons
     };
 
     // Weapons
-    class srifle_DMR_06_olive_F;
-    class bde_spas12:srifle_DMR_06_olive_F
+	class Rifle_Base_F: Rifle {
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
+
+    class bde_spas12:Rifle_Base_F
     {
         author = "NotSure";
         scope = 2;
@@ -70,96 +76,115 @@ class cfgWeapons
         picture = "\bde\pics\weapons\gear_spas12.paa";
         magazines[] = {"bde_8rnd_12gauge_pellets","bde_8rnd_12gauge_slug"};
         model = "\bde\models\bde_w_spas12";
+        inertia = 0.5;
 
         autoFire = false;
         autoReload = false;
         reloadTime = 0.15;
         reloadAction = "GestureReloadEBR";
 
-        inertia = 0.5;
-        bullet1[] = {"a3\sounds_f\weapons\Shells\shotgun\metal_shotgun_01",0.501187,1,15};
-        bullet2[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_02",0.501187,1,15};
-        bullet3[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_03",0.501187,1,15};
-        bullet4[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_04",0.501187,1,15};
-        bullet5[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_01",0.398107,1,15};
-        bullet6[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_02",0.398107,1,15};
-        bullet7[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_03",0.398107,1,15};
-        bullet8[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_04",0.398107,1,15};
-        bullet9[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_01",0.223872,1,15};
-        bullet10[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_02",0.223872,1,15};
-        bullet11[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_03",0.223872,1,15};
-        bullet12[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_04",0.223872,1,15};
-        soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
+        bullet1[] = {"a3\sounds_f\weapons\Shells\shotgun\metal_shotgun_01", 0.501187, 1, 15};
+		bullet2[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_02", 0.501187, 1, 15};
+		bullet3[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_03", 0.501187, 1, 15};
+		bullet4[] = {"A3\Sounds_F\weapons\shells\shotgun\metal_shotgun_04", 0.501187, 1, 15};
+		bullet5[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_01", 0.398107, 1, 15};
+		bullet6[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_02", 0.398107, 1, 15};
+		bullet7[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_03", 0.398107, 1, 15};
+		bullet8[] = {"A3\Sounds_F\weapons\shells\shotgun\dirt_shotgun_04", 0.398107, 1, 15};
+		bullet9[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_01", 0.223872, 1, 15};
+		bullet10[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_02", 0.223872, 1, 15};
+		bullet11[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_03", 0.223872, 1, 15};
+		bullet12[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_04", 0.223872, 1, 15};
+		soundBullet[] = {"bullet1", 0.083000, "bullet2", 0.083000, "bullet3", 0.083000, "bullet4", 0.083000, "bullet5", 0.083000, "bullet6", 0.083000, "bullet7", 0.083000, "bullet8", 0.083000, "bullet9", 0.083000, "bullet10", 0.083000, "bullet11", 0.083000, "bullet12", 0.083000};
 
-        fireSpreadAngle = 0.6789;
+        fireSpreadAngle = 0.650000;
+		discreteDistance[] = {50, 100, 200};
 
         changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl",0.316228,1,5};
-        drySound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl",0.562341,1,10};
+        drySound[] = {"A3\Sounds_F\weapons\Other\dry6.wss", 0.100000, 1};
         reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL",0.562341,1,10};
 
-        modes[] = {"Single"};
-        class Single : Mode_SemiAuto
- 		{
-            class BaseSoundModeType
-            class StandardSound : BaseSoundModeType;
-            sounds[] = {"StandardSound"};
-            dispersion = 0.003;
-            soundContinuous = 0;
-            reloadTime = 0.5;
-            magazineReloadTime = 6;
-            recoil = "recoil_single_primary_5outof10";
-            recoilProne = "recoil_single_primary_prone_5outof10";
-            minRange = 0;
-            minRangeProbab = 0.5;
-            midRange = 60;
-            midRangeProbab = 0.2;
-            maxRange = 100;
-            maxRangeProbab = 0.03;
- 		};
+        modelOptics = "-";
+		modes[] = {"Single"};
+        class Single: Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
 
-        class WeaponSlotsInfo
- 		{
- 			mass = 4; // default mass of a weapon
- 			class MuzzleSlot : SlotInfo
- 			{
- 			  // targetProxy
- 			  linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+			class BaseSoundModeType {
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_1", 0.398107, 1, 30};
+				closure2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_2", 0.398107, 1, 30};
+				soundClosure[] = {"closure1", 0.500000, "closure2", 0.500000};
+			};
 
- 			  // display name
- 			  displayName = "Muzzle Slot";
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"\A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_short_01", 5.011872, 1, 2200};
+				begin2[] = {"\A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_short_02", 5.011872, 1, 2200};
+				begin3[] = {"\A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_short_03", 5.011872, 1, 2200};
+				soundBegin[] = {"begin1", 0.330000, "begin2", 0.330000, "begin2", 0.340000};
 
- 			  // class names with items supported by weapon
- 			  compatibleItems[] = {}; // moved to each weapon
- 			};
+				class SoundTails {
+					class TailInterior {
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_interior", 1, 1, 1500};
+						frequency = 1;
+						volume = "interior";
+					};
 
- 			//class CowsSlot: CowsSlot {};
-            class CowsSlot : SlotInfo
-            {
-               // targetProxy
-               linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+					class TailTrees {
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_trees", 1, 1, 1500};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
 
-               // display name
-               displayName = "CowsSlot";
+					class TailForest {
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_forest", 1, 1, 1500};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
 
-               // class names with items supported by weapon
-               compatibleItems[] = {"optic_Arco","optic_aco", "optic_ACO_grn","optic_hamr","optic_Holosight"};
-            };
+					class TailMeadows {
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_meadows", 1, 1, 1500};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
 
- 			//class PointerSlot: PointerSlot {};
-            class PointerSlot : SlotInfo
-            {
-               // targetProxy
-               linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+					class TailHouses {
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_houses", 1, 1, 1500};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
 
-               // display name
-               displayName = "PointerSlot";
+			dispersion = 0.003000;
+			soundContinuous = 0;
+			reloadTime = 0.100000;
+			magazineReloadTime = 0;
+			recoil = "recoil_single_gm6";
+			recoilProne = "recoil_single_prone_gm6";
+			minRange = 0;
+			midRange = 60;
+			maxRange = 100;
+			minRangeProbab = 0.500000;
+			midRangeProbab = 0.200000;
+			maxRangeProbab = 0.030000;
+		};
 
-               // class names with items supported by weapon
-               compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
-            };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+			mass = 4;
 
- 			allowedSlots[] = {901}; // you simply cannot put this into your pants
- 		};
+			class MuzzleSlot {
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {};
+			};
+		};
+
+        class GunParticles: GunParticles {
+			class SecondEffect {
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
     };
 
     class bde_melee_weapon : Rifle
@@ -195,15 +220,15 @@ class cfgWeapons
 			dispersion = 0.1;
 			reloadTime = 1;
 		};
-};
+    };
 
     class bde_melee_katana : bde_melee_weapon
     {
         author = "NotSure";
         scope = 2;
         displayName = "Katana";
-        descriptionShort = "very sharp";
+        descriptionShort = "Sharp Katana";
         picture = "\bde\pics\hatchet.paa";
-        model = "\A3\Structures_F\Items\Tools\Axe_F";
+        model = "\bde\models\bde_w_katana";
     };
 };

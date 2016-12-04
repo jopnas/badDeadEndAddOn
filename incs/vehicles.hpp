@@ -128,35 +128,35 @@ class CfgVehicles
         displayName = "Window Barricade. 6 Planks";
         model = "\bde\models\barricade_window_six";
         armor = 600;
-    }
+    };
     class bde_barricade_win_five:bde_barricade_win_six {
         displayName = "Window Barricade. 5 Planks";
         model = "\bde\models\barricade_window_five";
         armor = 500;
-    }
+    };
     class bde_barricade_win_four:bde_barricade_win_six {
         displayName = "Window Barricade. 4 Planks";
         model = "\bde\models\barricade_window_four";
         armor = 400;
-    }
+    };
     class bde_barricade_win_three:bde_barricade_win_six {
         displayName = "Window Barricade. 3 Planks";
         model = "\bde\models\barricade_window_three";
         armor = 300;
-    }
+    };
     class bde_barricade_win_two:bde_barricade_win_six {
         displayName = "Window Barricade. 2 Planks";
         model = "\bde\models\barricade_window_two";
         armor = 200;
-    }
+    };
     class bde_barricade_win_one:bde_barricade_win_six {
         displayName = "Window Barricade. 1 Plank";
         model = "\bde\models\barricade_window_one";
         armor = 100;
-    }
+    };
 
     class bde_codelock:Land_Pallet_F {
         author = "NotSure";
         model = "\bde\models\bde_codelock";
-    }
+    };
 };
