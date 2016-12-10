@@ -72,7 +72,7 @@ class cfgWeapons
         scope = 2;
         displayName = "Spas-12";
         descriptionShort = "Spas-12";
-        nameSound = "rifle";
+        nameSound = "Shotgun";
         picture = "\bde\pics\weapons\gear_spas12.paa";
         magazines[] = {"bde_8rnd_12gauge_pellets","bde_8rnd_12gauge_slug"};
         model = "\bde\models\bde_w_spas12";
@@ -97,7 +97,7 @@ class cfgWeapons
 		bullet12[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_04", 0.223872, 1, 15};
 		soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
 
-        fireSpreadAngle = 1.5;
+        fireSpreadAngle = 2.5;
 		discreteDistance[] = {50, 100, 200};
 
         changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl",0.316228,1,5};
@@ -189,9 +189,9 @@ class cfgWeapons
 
     class bde_melee_weapon : Rifle
 	{
-        scope = 2;
+        scope = 1;
         displayName = "melee";
-		isMelee = true;
+        nameSound = "Melee";
 
 		distanceZoomMin = 50;
 		distanceZoomMax = 50;
@@ -206,8 +206,10 @@ class cfgWeapons
 		drySound[] = {"", 1, 1};
 		reloadMagazineSound[] = {"", 1, 1};
 
+        //cursor = "EmptyCursor";
+        //cursorAim = "gl";
         cursor = "EmptyCursor";
-        cursorAim = "gl";
+        cursoraim = "CursorAim";
 		cursorSize = 1;
 
 		handAnim[] = {"OFP2_ManSkeleton","\bde\anims\melee_hatchet_holding.rtm"};

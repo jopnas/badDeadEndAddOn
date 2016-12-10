@@ -91,7 +91,7 @@ class cfgMagazines
                 putOutputItem = "cargo";
                 actionTime = 2;
                 actionSound = "drinkSound0";
-                customFunction = "";
+                customFunction = "[25] call bde_fnc_changeThirst;";
             };
             class action2 {
                 actionText = "Empty bottle";
@@ -124,7 +124,7 @@ class cfgMagazines
                 putOutputItem = "cargo";
                 actionTime = 2;
                 actionSound = "drinkSound0";
-                customFunction = "";
+                customFunction = "[25] call bde_fnc_changeThirst;";
             };
             class action2 {
                 actionText = "Empty bottle";
@@ -157,7 +157,7 @@ class cfgMagazines
                 putOutputItem = "cargo";
                 actionTime = 2;
                 actionSound = "drinkSound0";
-                customFunction = "";
+                customFunction = "[25] call bde_fnc_changeThirst;";
             };
             class action2 {
                 actionText = "Empty bottle";
@@ -190,7 +190,7 @@ class cfgMagazines
                 putOutputItem = "cargo";
                 actionTime = 2;
                 actionSound = "drinkSound0";
-                customFunction = "";
+                customFunction = "[25] call bde_fnc_changeThirst;";
             };
             class action2 {
                 actionText = "Empty bottle";
@@ -260,6 +260,28 @@ class cfgMagazines
 		picture = "\bde\pics\canteen_empty.paa";
 		model="\A3\structures_f_epa\Items\Food\Canteen_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_canteenfilled_3_4";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "drinkSound0";
+                customFunction = "[25] call bde_fnc_changeThirst;";
+            };
+            class action2 {
+                actionText = "Empty canteen";
+                outputItem = "bde_canteenempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 10;
+                actionSound = "fillSound0";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_canteenfilled_3_4: CA_Magazine
@@ -271,6 +293,28 @@ class cfgMagazines
 		picture = "\bde\pics\canteen_empty.paa";
 		model="\A3\structures_f_epa\Items\Food\Canteen_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_canteenfilled_2_4";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "drinkSound0";
+                customFunction = "[25] call bde_fnc_changeThirst;";
+            };
+            class action2 {
+                actionText = "Empty canteen";
+                outputItem = "bde_canteenempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 10;
+                actionSound = "fillSound0";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_canteenfilled_2_4: CA_Magazine
@@ -282,6 +326,28 @@ class cfgMagazines
 		picture = "\bde\pics\canteen_empty.paa";
 		model="\A3\structures_f_epa\Items\Food\Canteen_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_canteenfilled_1_4";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "drinkSound0";
+                customFunction = "[25] call bde_fnc_changeThirst;";
+            };
+            class action2 {
+                actionText = "Empty canteen";
+                outputItem = "bde_canteenempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 10;
+                actionSound = "fillSound0";
+                customFunction = "";
+            };
+        };
 	};
 
 	class bde_canteenfilled_1_4: CA_Magazine
@@ -293,6 +359,28 @@ class cfgMagazines
 		picture = "\bde\pics\canteen_empty.paa";
 		model="\A3\structures_f_epa\Items\Food\Canteen_F";
         count=1;
+        class itemActions {
+            class action1 {
+                actionText = "Drink clean water";
+                outputItem = "bde_canteenempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 2;
+                actionSound = "drinkSound0";
+                customFunction = "[25] call bde_fnc_changeThirst;";
+            };
+            class action2 {
+                actionText = "Empty canteen";
+                outputItem = "bde_canteenempty";
+                consumesItems[] = {};
+                requiredItems[] = {};
+                putOutputItem = "cargo";
+                actionTime = 10;
+                actionSound = "fillSound0";
+                customFunction = "";
+            };
+        };
 	};
 
 	// Food
@@ -315,7 +403,7 @@ class cfgMagazines
                 putOutputItem = "ground";
                 actionTime = 10;
                 actionSound = "eatSound0";
-                customFunction = "";
+                customFunction = "[20+(round(random 30))] call bde_fnc_changeHunger;";
             };
         };
 	};
@@ -350,7 +438,7 @@ class cfgMagazines
                 putOutputItem = "ground";
                 actionTime = 10;
                 actionSound = "eatSound0";
-                customFunction = "";
+                customFunction = "[50] call bde_fnc_changeHunger;";
             };
         };
 	};
@@ -386,7 +474,7 @@ class cfgMagazines
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "eatSound0";
-                customFunction = "";
+                customFunction = "[25] call bde_fnc_changeHunger;";
             };
         };
 	};
@@ -409,7 +497,7 @@ class cfgMagazines
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "eatSound0";
-                customFunction = "";
+                customFunction = "[40] call bde_fnc_changeHunger;";
             };
         };
 	};
@@ -433,7 +521,7 @@ class cfgMagazines
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "eatSound0";
-                customFunction = "";
+                customFunction = "[15] call bde_fnc_changeHunger;";
             };
         };
 	};
@@ -457,7 +545,7 @@ class cfgMagazines
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "eatSound0";
-                customFunction = "";
+                customFunction = "[20] call bde_fnc_changeHunger;";
             };
         };
 	};
@@ -482,7 +570,7 @@ class cfgMagazines
                 putOutputItem = "";
                 actionTime = 5;
                 actionSound = "eatSound0";
-                customFunction = "";
+                customFunction = "[15] call bde_fnc_changeHunger;[5] call bde_fnc_changeThirst;";
             };
         };
 	};
@@ -507,7 +595,7 @@ class cfgMagazines
                 putOutputItem = "ground";
                 actionTime = 5;
                 actionSound = "drinkSound0";
-                customFunction = "";
+                customFunction = "[20] call bde_fnc_changeThirst;";
             };
         };
     };
@@ -622,7 +710,8 @@ class cfgMagazines
                 putOutputItem = "";
                 actionTime = 0;
                 actionSound = "";
-                customFunction = "bde_fnc_buildFireplace";
+                customFunction = "[] spawn bde_fnc_buildFireplace";
+                justFunction = 1;
             };
 	    };
 	};
@@ -645,7 +734,8 @@ class cfgMagazines
                 putOutputItem = "";
                 actionTime = 0;
                 actionSound = "";
-                customFunction = "bde_fnc_buildFireplace";
+                customFunction = "[] spawn bde_fnc_buildFireplace";
+                justFunction = 1;
             };
 	    };
 	};
