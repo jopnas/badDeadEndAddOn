@@ -95,9 +95,9 @@ class cfgWeapons
 		bullet10[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_02", 0.223872, 1, 15};
 		bullet11[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_03", 0.223872, 1, 15};
 		bullet12[] = {"A3\Sounds_F\weapons\shells\shotgun\grass_shotgun_04", 0.223872, 1, 15};
-		soundBullet[] = {"bullet1", 0.083000, "bullet2", 0.083000, "bullet3", 0.083000, "bullet4", 0.083000, "bullet5", 0.083000, "bullet6", 0.083000, "bullet7", 0.083000, "bullet8", 0.083000, "bullet9", 0.083000, "bullet10", 0.083000, "bullet11", 0.083000, "bullet12", 0.083000};
+		soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
 
-        fireSpreadAngle = 0.650000;
+        fireSpreadAngle = 1.5;
 		discreteDistance[] = {50, 100, 200};
 
         changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl",0.316228,1,5};
@@ -155,18 +155,18 @@ class cfgWeapons
 				};
 			};
 
-			dispersion = 0.003000;
+			dispersion = 0.003;
 			soundContinuous = 0;
-			reloadTime = 0.100000;
+			reloadTime = 0.1;
 			magazineReloadTime = 0;
 			recoil = "recoil_single_gm6";
 			recoilProne = "recoil_single_prone_gm6";
 			minRange = 0;
 			midRange = 60;
 			maxRange = 100;
-			minRangeProbab = 0.500000;
-			midRangeProbab = 0.200000;
-			maxRangeProbab = 0.030000;
+			minRangeProbab = 0.5;
+			midRangeProbab = 0.2;
+			maxRangeProbab = 0.0;
 		};
 
         class WeaponSlotsInfo: WeaponSlotsInfo {
