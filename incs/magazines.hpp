@@ -891,7 +891,7 @@ class cfgMagazines
 		scope=2;
 		author = "NotSure";
 		displayName="Wrench";
-		picture = "\bde\pics\hatchet.paa";
+		picture = "\bde\pics\wrench.paa";
 		model = "\A3\Structures_F\Items\Tools\Wrench_F";
         count=1;
 	};

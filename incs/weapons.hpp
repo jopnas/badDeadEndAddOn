@@ -190,7 +190,7 @@ class cfgWeapons
     class bde_melee_weapon : Rifle
 	{
         scope = 1;
-        displayName = "melee";
+        displayName = "Melee";
         nameSound = "Melee";
 
 		distanceZoomMin = 50;
@@ -206,18 +206,67 @@ class cfgWeapons
 		drySound[] = {"", 1, 1};
 		reloadMagazineSound[] = {"", 1, 1};
 
-        //cursor = "EmptyCursor";
-        //cursorAim = "gl";
         cursor = "EmptyCursor";
         cursoraim = "CursorAim";
 		cursorSize = 1;
 
 		handAnim[] = {"OFP2_ManSkeleton","\bde\anims\melee_hatchet_holding.rtm"};
 
-		modes[] = {"Single"};
+        class EventHandlers {
+            init = "systemChat format['cfgWeapons init: %1',_this]";
+            fired = "systemChat format['cfgWeapons fired: %1',_this]";
+        };
 
+		modes[] = {"Single"};
 		class Single : Mode_FullAuto
 		{
+            sounds[] = {"StandardSound"};
+
+            class BaseSoundModeType {
+                weaponSoundEffect = "";
+                closure1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_1", 0.398107, 1, 30};
+                closure2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_Closure_2", 0.398107, 1, 30};
+                soundClosure[] = {"closure1", 0.500000, "closure2", 0.500000};
+            };
+            class StandardSound: BaseSoundModeType {
+                begin1[] = {"\A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_short_01", 5.011872, 1, 2200};
+                begin2[] = {"\A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_short_02", 5.011872, 1, 2200};
+                begin3[] = {"\A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_02_MAR10\DMR_02_short_03", 5.011872, 1, 2200};
+                soundBegin[] = {"begin1", 0.330000, "begin2", 0.330000, "begin2", 0.340000};
+
+                class SoundTails {
+                    class TailInterior {
+                        sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_interior", 1, 1, 1500};
+                        frequency = 1;
+                        volume = "interior";
+                    };
+
+                    class TailTrees {
+                        sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_trees", 1, 1, 1500};
+                        frequency = 1;
+                        volume = "(1-interior/1.4)*trees";
+                    };
+
+                    class TailForest {
+                        sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_forest", 1, 1, 1500};
+                        frequency = 1;
+                        volume = "(1-interior/1.4)*forest";
+                    };
+
+                    class TailMeadows {
+                        sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_meadows", 1, 1, 1500};
+                        frequency = 1;
+                        volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+                    };
+
+                    class TailHouses {
+                        sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_06_Mk14\DMR_06_tail_houses", 1, 1, 1500};
+                        frequency = 1;
+                        volume = "(1-interior/1.4)*houses";
+                    };
+                };
+            };
+
 			displayName = "";
 			dispersion = 0.1;
 			reloadTime = 1;
@@ -230,7 +279,7 @@ class cfgWeapons
         scope = 2;
         displayName = "Katana";
         descriptionShort = "Sharp Katana";
-        picture = "\bde\pics\hatchet.paa";
+        picture = "\bde\pics\bde_katana.paa";
         model = "\bde\models\bde_w_katana";
     };
 };
