@@ -268,7 +268,7 @@ class cfgWeapons
             };
 
 			displayName = "";
-			dispersion = 0.1;
+			dispersion = 0.05;
 			reloadTime = 1;
 		};
     };
