@@ -1325,6 +1325,7 @@ class cfgMagazines
         displayName = "Melee";
         displayNameMagazine = "Melee";
         shortNameMagazine = "Melee";
+        picture = "\bde\pics\magazines\bde_melee.paa";
         count = 100000;
         initSpeed = 100;
         ammo = "bde_melee_ammo";

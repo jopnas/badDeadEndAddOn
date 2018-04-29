@@ -212,10 +212,10 @@ class cfgWeapons
 
 		handAnim[] = {"OFP2_ManSkeleton","\bde\anims\melee_hatchet_holding.rtm"};
 
-        class EventHandlers {
+        /*class EventHandlers {
             init = "systemChat format['cfgWeapons init: %1',_this]";
             fired = "systemChat format['cfgWeapons fired: %1',_this]";
-        };
+        };*/
 
 		modes[] = {"Single"};
 		class Single : Mode_FullAuto
