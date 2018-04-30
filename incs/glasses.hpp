@@ -7,8 +7,12 @@ class CfgGlasses
         displayname = "Gasmask";
         model = "\bde\models\bde_gasmask.p3d";
         picture = "\bde\pics\bde_gasmask.paa";
-        identityTypes[] = {};  
-        mass = 10;
+        identityTypes[] =
+        {
+            "NoGlasses",0,"G_NATO_default",300,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",50,"G_NATO_SF",300,"G_NATO_sniper",0,
+            "G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",00,"G_HAF_default",50,"G_CIVIL_female",0,"G_CIVIL_male",0
+        };
+        mass = 3;
         class itemActions {
             class action1 {
                 actionText = "Detache filter";
@@ -25,11 +29,9 @@ class CfgGlasses
     };
     class bde_gasmask_wasted:bde_gasmask
     {
-        author = "NotSure";
         displayname = "Gasmask (wasted filter)";
         model = "\bde\models\bde_gasmask.p3d";
         picture = "\bde\pics\bde_gasmask.paa";
-        mass = 10;
         class itemActions {
             class action1 {
                 actionText = "Change filter";
@@ -46,11 +48,10 @@ class CfgGlasses
     
     class bde_gasmask_empty:bde_gasmask
     {
-        author = "NotSure";
         displayname = "Gasmask without filter";
         model = "\bde\models\bde_gasmask_empty.p3d";
         picture = "\bde\pics\bde_gasmask_empty.paa";
-        mass = 7;
+        mass = 2;
         class itemActions {
             class action1 {
                 actionText = "Attache filter";
