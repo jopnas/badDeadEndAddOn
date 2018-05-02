@@ -7,11 +7,10 @@ class CfgGlasses
         displayname = "Gasmask";
         model = "\bde\models\bde_gasmask.p3d";
         picture = "\bde\pics\bde_gasmask.paa";
-        identityTypes[] =
-        {
-            "NoGlasses",0,"G_NATO_default",300,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",50,"G_NATO_SF",300,"G_NATO_sniper",0,
-            "G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",00,"G_HAF_default",50,"G_CIVIL_female",0,"G_CIVIL_male",0
-        };
+        identityTypes[] = {};
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         mass = 3;
         class itemActions {
             class action1 {
