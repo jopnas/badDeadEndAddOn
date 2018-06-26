@@ -1,7 +1,9 @@
-class CfgGlasses
+class Headgear_Base_F;
+class Item_Base_F;
+class CfgGlassesclass CfgGlasses
 {
-	class None;
-    class bde_gasmask:None
+	class G_Balaclava_blk;
+    class bde_gasmask:G_Balaclava_blk
     {
         author = "NotSure";
         displayname = "Gasmask";
