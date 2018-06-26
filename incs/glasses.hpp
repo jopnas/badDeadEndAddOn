@@ -1,6 +1,6 @@
 class Headgear_Base_F;
 class Item_Base_F;
-class CfgGlassesclass CfgGlasses
+class CfgGlasses
 {
 	class G_Balaclava_blk;
     class bde_gasmask:G_Balaclava_blk
