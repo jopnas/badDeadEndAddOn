@@ -1,15 +1,15 @@
 class Headgear_Base_F;
 class Item_Base_F;
-class CfgGlassesclass CfgGlasses
+class CfgGlasses
 {
 	class G_Balaclava_blk;
     class bde_gasmask:G_Balaclava_blk
     {
         author = "NotSure";
         displayname = "Gasmask";
-        model = "\bde\models\bde_gasmask.p3d";
+        //model = "\bde\models\gasmask\bde_gasmask.p3d";
         picture = "\bde\pics\bde_gasmask.paa";
-        identityTypes[] = {};
+        /*identityTypes[] = {};
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -25,13 +25,13 @@ class CfgGlassesclass CfgGlasses
                 actionSound = "";
                 customFunction = "";
             };
-        };
+        };*/
 
     };
     class bde_gasmask_wasted:bde_gasmask
     {
         displayname = "Gasmask (wasted filter)";
-        model = "\bde\models\bde_gasmask.p3d";
+        model = "\bde\models\gasmask\bde_gasmask.p3d";
         picture = "\bde\pics\bde_gasmask.paa";
         class itemActions {
             class action1 {
@@ -50,7 +50,7 @@ class CfgGlassesclass CfgGlasses
     class bde_gasmask_empty:bde_gasmask
     {
         displayname = "Gasmask without filter";
-        model = "\bde\models\bde_gasmask_empty.p3d";
+        model = "\bde\models\gasmask\bde_gasmask_empty.p3d";
         picture = "\bde\pics\bde_gasmask_empty.paa";
         mass = 2;
         class itemActions {
