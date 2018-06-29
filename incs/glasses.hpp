@@ -7,7 +7,7 @@ class CfgGlasses
     {
         author = "NotSure";
         displayname = "Gasmask";
-        //model = "\bde\models\gasmask\bde_gasmask.p3d";
+        model = "\bde\models\gasmask\bde_gasmask.p3d";
         picture = "\bde\pics\bde_gasmask.paa";
         /*identityTypes[] = {};
         scope = 2;
